@@ -6,7 +6,7 @@
 
   <defs>
     <style type="text/css">
-      @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+      @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;text=HIPOLAREST');
 
       .hipopla,
       .resto {
