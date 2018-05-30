@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){});
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58906424-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-58906424-3');
+    </script> -->
+    <!-- End Google Analytics -->
+
+    <title>Hipopla Resto</title>
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="imapge/png" href="/media/favicon.png">
+
+    <noscript>
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="/css/deferred.css">
+      <link rel="stylesheet" href="/css/600.css" media="(min-width: 600px)">
+      <link rel="stylesheet" href="/css/900.css" media="(min-width: 900px)">
+    </noscript>
+
+    <meta name="description" content="Preparando los platillos más deliciosos!">
+    <meta name="keywords" content="hipopla, resto, San Pedro Sula, Honduras, restaurante, Colónia Los Alamos, cena, bebidas">
+    <meta name="author" content="Alex Vipond">
+  </head>
+
+  <body>
+    {% include navCSS.html %}
+    {% include nav.html %}
+    {% include emailCSS.html %}
+    {% include headerCSS.html %}
+    {% include landingPageCSS.html %}
+
+    <header class="landing-page">
+      <style>
+        #bg-img {
+          background-image: url(/images/jv-green-shirt-headshot-600.jpg);
+          opacity: .55;
+          background-position: center top;
+        }
+
+        @media screen and (min-width: 600px) {
+          #bg-img {
+            background-image: url(/images/jv-paisley-headshot-cropped-1280.jpg);
+            background-position: left top;
+          }
+        }
+      </style>
+      <div id="bg-img" class="bg-img"></div>
+
+      <div id="gist-wrapper">
+        <div id="gist">
+          <h1>bienvenidos a</h1>
+
+          <h2><span id="hip">HIP</span><span id="pla">PLA</span></h2>
+
+          <h3 id="resto">RESTO</h3>
+
+          <!-- <form action="https://getsimpleform.com/messages?form_api_token=c826bf93cc0f701979110234068b770a" method="post">
+            <input type='hidden' name='redirect_to' value='https://hipopla.com/email/gracias.html' />
+            <input type="tel" name="unsubscribe_me" value="" tabindex="-1" autocomplete="off" />
+            <input type="text" name="first-name" value="" placeholder="First name" autocapitalize="words" aria-label="first name" />
+            <input type="text" name="last-name" value="" placeholder="Last name" autocapitalize="words" aria-label="last name" />
+            <div class="email-wrapper">
+              <input type="email" name="email" value="" placeholder="Email" aria-label="email" required />
+            </div><br>
+            <button class="button" type="submit" name="submit-email">Subscribe to newsletter</button>
+          </form> -->
+        </div>
+      </div>
+
+    </header>
+
+    <div class="pseudo-landing-page"></div>
+
+    {% include blogPostCSS.html %}
+    {% include indexCSS.html %}
+
+    <main>
+      <article>
+        {{ content }}
+      </article>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
