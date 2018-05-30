@@ -1,6 +1,6 @@
 <svg version="1.1"
   baseProfile="full"
-  viewbox="0 0 140 52"
+  viewbox="0 0 140 72 "
   preserveAspectRatio="xMinYMin meet"
   xmlns="http://www.w3.org/2000/svg">
 
@@ -8,7 +8,8 @@
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;text=HIPOLAREST');
 
-      .hipopla {
+      .hipopla,
+      .resto {
         font-family: 'Amatic SC';
       }
 
@@ -17,7 +18,12 @@
         fill: #62e6f3;
       }
 
-      .yolk {
+      .resto {
+        font-size: 24px;
+      }
+
+      .yolk,
+      .resto {
         fill: #f6a932;
       }
     </style>
@@ -26,6 +32,7 @@
   <g>
     <text class="hipopla" x="5" y="45">HIP</text>
     <text class="hipopla" x="90" y="45">PLA</text>
+    <text class="resto" x="96.5" y="67">RESTO</text>
   </g>
 
   <g transform="translate(45 5) scale(1.05)">

@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){});
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58906424-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-58906424-3');
+        </script>
+        <!-- End Google Analytics -->
+
+        <title>Privacy & Security</title>
+
+        <meta charset="utf-8">
+        <meta name="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/images/vipond-for-congress.ico">
+
+        <noscript>
+            <link rel="stylesheet" href="/css/normalize.css">
+            <link rel="stylesheet" href="/css/deferred.css">
+            <link rel="stylesheet" href="/css/600.css" media="(min-width: 600px)">
+            <link rel="stylesheet" href="/css/900.css" media="(min-width: 900px)">
+        </noscript>
+
+        <meta name="description" content="Vote Dr. Jennifer Hoppe Vipond to represent Wisconsin's Fifth District!">
+        <meta name="keywords" content="jennifer, vipond, wisconsin, congress, 2018, moderate, republican, democrat, doctor">
+        <meta name="author" content="Alex Vipond">
+
+        <script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
+        <script> window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' } </script>
+    </head>
+
+    <body>
+        <style media="screen">
+    * {margin: 0; padding: 0;}
+
+    html,body {
+        background-color: #fefefe;
+        color: #121212;
+        width: 100%;
+        font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        letter-spacing: .013rem;
+    }
+
+    a {
+        text-decoration: none;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+
+    a:hover {
+        opacity: .7;
+        text-shadow: none;
+    }
+
+    .button {
+        padding: 7.5px 12.5px 7.5px 12.5px;
+        margin: .67em .67em .67em 0;
+        border-radius: 18.5px;
+        border-width: 1.5px;
+        border-style: solid;
+        font-size: 17px;
+        -webkit-transition: all .15s ease;
+        transition: all .15s ease;
+        display: inline-block;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+        -webkit-user-select: none;
+        -moz-user-select: -moz-none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu-icon text {
+        font-family: 'Nunito Sans';
+        font-size: 17px;
+    }
+
+    .menu-icon path {
+        stroke-dashoffset: 0;
+        -webkit-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+
+    .menu-icon::selection {
+        background-color: transparent;
+    }
+
+    .menu-icon::-moz-selection {
+        background-color: transparent;
+    }
+
+    .menu-icon-wrapper {
+        -webkit-user-select: none;
+        -moz-user-select: -moz-none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu-icon-wrapper::selection {
+        background-color: transparent;
+    }
+
+    .menu-icon-wrapper::-moz-selection {
+        background-color: transparent;
+    }
+
+    .open-menu .menu-icon path {
+        stroke-dashoffset: -194.77;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 10px 10px 6px 10px;
+        align-items: center;
+        color: #fefefe;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+    }
+
+        nav .social-wrapper {
+            display: none;
+        }
+
+        nav .logo-wrapper {
+            display: none;
+        }
+
+        nav .menu {
+            position: absolute;
+            display: inline-block;
+            text-align: left;
+            top: 0;
+            right: 0;
+            height: calc(100vh - 5.5em + 11px);
+            width: 124px;
+            background-color: #9a0007;
+            list-style-type: none;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+            padding: 5.5em 40px 0 40px;
+            margin: 0;
+            -webkit-transform: translateX(204px) scaleX(0);
+            transform: translateX(204px) scaleX(0);
+        }
+
+            nav li {
+                display: block;
+                margin: 1em 0 0 0;
+                font-size: 17px;
+            }
+
+            nav li:last-child {
+                position: absolute;
+                bottom: 4em;
+            }
+
+                nav li:last-child .social-icon {
+                    width: 45px;
+                    fill: #fefefe;
+                }
+
+                nav li:last-child .social-icon:first-of-type {
+                    margin: 0 10px 10px 0;
+                }
+
+            nav a {
+                color: #fefefe;
+            }
+
+            nav .donate {
+                display: inline-block;
+                background-color: transparent;
+                color: #fefefe;
+                border-color: #fefefe;
+                margin: 0;
+            }
+
+            nav .donate:hover {
+                background-color: #fefefe;
+                color: #9a0007;
+                opacity: 1;
+            }
+
+        nav .mobile-donate-wrapper {
+            display: inline-block;
+            width: 49.9%;
+            text-align: left;
+        }
+
+        nav .menu-icon-wrapper {
+            display: inline-block;
+            width: 49.9%;
+            text-align: right;
+        }
+
+            nav .menu-icon {
+                display: inline-block;
+            }
+
+            nav .menu-icon text {
+                fill: #fefefe;
+            }
+
+            nav .menu-icon path {
+                stroke: #fefefe;
+                fill: rgba(0, 0, 0, 0);
+            }
+
+        nav .open-menu .menu {
+            -webkit-transform: translateX(0) scaleX(1);
+            transform: translateX(0) scaleX(1);
+            box-shadow: 0 0 100vw 20vw #121212;
+        }
+
+    @media screen and (min-width: 600px) {
+        nav {
+            padding: 1em 10vw;
+        }
+
+            nav a:not(.donate) {
+                text-shadow: 0px 1px 4px rgba(18,18,18,0.5);
+            }
+
+        nav .logo-wrapper {
+            display: inline-block;
+            text-align: left;
+            width: 64.33px;
+        }
+
+            nav .logo {
+                height: 35px;
+                width: 44.33px;
+                margin-top: .2em;
+                -webkit-transition: all .2s ease;
+                transition: all .2s ease;
+                z-index: 0;
+                position: relative;
+            }
+
+            nav .logo path {
+                stroke: #fefefe;
+            }
+
+        nav .mobile-donate-wrapper {
+            display: none;
+        }
+
+        nav .social-wrapper {
+            display: flex;
+            flex-direction: row;
+            margin: .6em 0 0 0;
+            position: relative;
+            z-index: 0;
+            width: 10vw;
+            align-items: center;
+        }
+
+            nav .social-wrapper .social-icon {
+                height: 30px;
+                width: auto;
+                margin-right: 10px;
+                fill: #fefefe;
+            }
+
+            nav .social-wrapper .hashtag {
+                display: none;
+            }
+
+        nav .menu-wrapper {
+            text-align: right;
+            display: inline-block;
+            width: calc(99.9vw - 10vw - 64.33px);
+            margin-top: .6em;
+        }
+
+            nav .menu {
+                position: static;
+                text-align: right;
+                height: auto;
+                width: auto;
+                background-color: transparent;
+                padding: 0;
+                -webkit-transform: translateX(0px) scaleX(1);
+                transform: translateX(0px) scaleX(1);
+            }
+
+            nav .open-menu .menu {
+                background-color: transparent;
+                box-shadow: none;
+            }
+
+                nav li {
+                    display: inline-block;
+                    margin: 0 1vw;
+                }
+
+                nav li:last-child {
+                    display: none;
+                }
+
+                nav li:nth-last-child(2) {
+                    margin: 0 0 0 1vw;
+                }
+
+                    nav .donate {
+                        margin: 0;
+                        background-color: #fefefe;
+                        color: #9a0007;
+                    }
+
+            nav .menu-icon-wrapper {
+                display: none;
+            }
+    }
+
+    @media screen and (min-width: 900px) {
+        .button {
+            border-radius: 4px;
+            box-shadow: 0px 2px 2px 0px rgba(18,18,18,.5);
+        }
+
+        .button:hover {
+            -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+            cursor: pointer;
+            box-shadow: 0px 6px 6px 0px rgba(18,18,18,.5);
+            opacity: 1;
+        }
+
+        .button:active {
+            -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+            box-shadow: 0px 2px 2px 0px rgba(18,18,18,.5);
+        }
+
+        nav logo-wrapper {
+            width: 19.9vw;
+        }
+
+        nav .social-wrapper {
+            width: 20vw;
+        }
+
+            nav .social-wrapper a {
+                line-height: 0;
+            }
+
+            nav .social-wrapper .social-icon {
+                height: 23px;
+            }
+
+            nav .social-wrapper .hashtag {
+                vertical-align: top;
+                display: inline-block;
+                font-weight: 400;
+                font-size: 19px;
+            }
+
+        nav .logo-wrapper {
+            width: 19.9vw;
+        }
+
+            nav .logo:hover {
+                opacity: .7;
+                cursor: pointer;
+            }
+
+        nav .menu-wrapper {
+            width: 60vw;
+        }
+    }
+</style>
+
+        <nav class="nav">
+  <div class="logo-wrapper">
+    <svg class="logo" alt="Hipopla logo" onclick="location.href = '/';" version="1.1"
+      baseProfile="full"
+      viewbox="0 0 160 90 "
+      preserveAspectRatio="xMinYMin meet"
+      xmlns="http://www.w3.org/2000/svg">
+
+      <defs>
+        <style type="text/css">
+          @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;text=HIPOLAREST');
+
+          .hipopla {
+            font-family: 'Amatic SC';
+          }
+
+          .hipopla {
+            font-size: 50px;
+            fill: #62e6f3;
+          }
+
+          .yolk {
+            fill: #f6a932;
+          }
+        </style>
+      </defs>
+
+      <g>
+        <text class="hipopla" x="5" y="45">HIP</text>
+        <text class="hipopla" x="90" y="45">PLA</text>
+      </g>
+
+      <g transform="translate(45 5) scale(1.05)">
+
+        <!-- <rect x="0" y="0" width="44.6" height="42.2" stroke-width="1" stroke="#000" fill="none"/> -->
+
+        <path fill="none" stroke="#f6a932" stroke-width="1.5" stroke-linecap="round"
+          d="M 22.5 5
+          q -15 -4.5 -14.5 6
+          q 0 3 -2 6
+          q -4 6.5 1 14
+          q 1 1.5 2 2
+          q 3.5 1.5 6 3
+          q 6 4 16 1
+          q 17 -6 2 -25
+          q -1.75 -2 -2.5 -4
+          q -1 -2.5 -5 -2.5
+          q -2 -.2 -2.75 -.4
+          "/>
+
+        <path class="yolk" stroke-width="0" stroke-linecap="round" fill-rule="evenodd"
+          d="M 19 10.5
+          a 6.75 6.75 0 1 1 -.001 0
+          m 0.2 1.25
+          a 5.5 5.5 0 0 0 -5.168 3.619
+          a 1.8 1.8 0 1 0 3.491 0.616
+          q .2 -2.5 2.8 -2.2
+          a .95 .95 0 0 0 .001 -1.9
+          "/>
+      </g>
+    </svg>
+
+  </div>
+
+  <div class="social-wrapper">
+    <a href="https://facebook.com/Hipopla" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon" id="facebook-desktop">
+        <path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z" />
+      </svg>
+    </a>
+
+    <a href="https://www.instagram.com/hipopla_resto/" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon insta" id="insta-desktop">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+      </svg>
+    </a>
+
+    <!-- <a href="https://www.facebook.com/hashtag/Hipopla?source=feed_text&pnref=story" target="_blank" rel="noopener" class="hashtag">#Hipopla</a> -->
+  </div>
+
+  <div class="menu-wrapper">
+    <ul class="menu">
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/nosotros/">Nosotros</a></li>
+      <!-- <li><a href="/blog/">Blog</a></li> -->
+      <!-- <li><a href="/contacto/">Contacto</a></li> -->
+      <li>
+        <a href="https://facebook.com/Hipopla" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon" id="facebook-mobile">
+            <path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z" />
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/hipopla_resto/" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon insta" id="insta-mobile">
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+          </svg>
+        </a>
+
+        <!-- <br>
+
+        <a href="https://www.facebook.com/hashtag/Hipopla?source=feed_text&pnref=story" target="_blank" rel="noopener" class="hashtag">#Hipopla</a> -->
+      </li>
+    </ul>
+  </div>
+
+  <div class="menu-icon-wrapper">
+    <svg class="menu-icon" onclick="openMenu()" baseProfile="tiny" width="152" height="66" viewBox="0 0 152 66" preserveAspectRatio="xMinYMin meet">
+      <path d="M120 64 A 31 31 0 1 1 120.00001 64 H -120" stroke-width="2" fill-opacity="1" stroke-dasharray="194.77" stroke-linecap="round"/>
+      <text x="120" y="33" text-anchor="middle" dominant-baseline="central">Menu</text>
+    </svg>
+  </div>
+
+  <script src="/scripts/open-menu.js" defer></script>
+</nav>
+
+        <style>
+    header {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 33vh;
+        background-image: url("/images/landing-page-gradient.svg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .bg-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: grayscale(100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-img-center-top {
+        background-position: center top;
+    }
+
+    .bg-img-left-top {
+        background-position: left top;
+    }
+
+    header #gist-wrapper {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        box-sizing: border-box;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0 5vw;
+        margin: 0;
+    }
+
+        header #gist-wrapper #gist {
+            width: 100%;
+        }
+
+            #gist h1 {
+                font-family: 'Martel', Georgia, sans-serif;
+                color: #fefefe;
+                font-size: 40px;
+                line-height: 1.58;
+                font-weight: 400;
+                margin: .4em 0;
+            }
+
+            #gist h1, #gist h2 {
+                text-shadow: 0px 1px 4px rgba(18,18,18,0.5);
+            }
+
+    @media screen and (min-width: 600px) {
+        #gist h1 {
+            font-weight: 300;
+            font-size: 36px;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        header #gist-wrapper {
+            padding: 0 10vw;
+        }
+
+            #gist h1 {
+                font-size: 54px;
+            }
+    }
+
+    .pseudo-header {
+        height: 33vh;
+    }
+</style>
+
+
+        <header>
+            <div id="gist-wrapper">
+                <div id="gist">
+                    <h1>Privacy & Security</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="pseudo-header"></div>
+
+        <style>
+    main .blog-post {
+        padding: 29px 5vw;
+    }
+
+        main .blog-post > p:first-of-type {
+            margin-top: 2em;
+        }
+
+        main .blog-post .post-summary {
+            border-top: 2px solid #9a0007;
+            padding-top: 2.4em;
+        }
+
+        main .blog-post .post-summary h2, main .blog-post .post-summary h3 {
+            text-align: left;
+        }
+
+        main .blog-post .post-summary h2 a {
+            color: #121212;
+        }
+
+        /* Second child because the first child is an empty h2 */
+        main .blog-post .post-summary:nth-child(2) {
+            border: none;
+        }
+
+        main .blog-post img {
+            width: 100%;
+        }
+
+    @media screen and (min-width: 600px) {
+        main .blog-post {
+            padding: 1.6em 10vw;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        main {
+            padding: 4.8em 0 1.6em 0;
+        }
+
+        main .blog-post {
+            padding: 1.6em calc((100vw - 700px) / 2);
+        }
+
+            main .blog-post img {
+                width: 700px;
+            }
+
+            main .blog-post h2, main .blog-post h3 {
+                text-align: center;
+            }
+    }
+</style>
+
+
+        <main>
+            <article>
+                <section class="blog-post">
+    <h2>Privacy</h2>
+
+    <p>This privacy notice discloses the privacy practices for <a href="/">vipondforcongress.com</a>. This privacy notice applies solely to information collected by this web site. It will notify you of the following:</p>
+    <ol>
+        <li>What personally identifiable information is collected from you through the web site, how it is used and with whom it may be shared.</li>
+        <li>What choices are available to you regarding the use of your data.</li>
+        <li>The security procedures in place to protect the misuse of your information.</li>
+        <li>How you can correct any inaccuracies in the information.</li>
+    </ol>
+
+    <h4>Information Collection, Use, and Sharing</h4>
+
+    <p>We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone.</p>
+
+    <p>We will use your information to respond to you, regarding the reason you contacted us. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request.</p>
+
+    <h4>Your Access to and Control Over Information</h4>
+
+    <p>You may opt out of any future contacts from us at any time. You can do the following at any time by contacting us via <a href="/contact/">our Contact page</a>.</p>
+
+    <ul>
+        <li>See what data we have about you, if any.</li>
+        <li>Change/correct any data we have about you.</li>
+        <li>Have us delete any data we have about you.</li>
+        <li>Express any concern you have about our use of your data.</li>
+    </ul>
+
+    <h2>Security</h2>
+
+    <p>We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline. The computers/servers in which we store personally identifiable information are kept in a secure environment.</p>
+
+    <p>We use "cookies" on this site. A cookie is a piece of data stored on a site visitor's hard drive to help us improve your access to our site and identify repeat visitors to our site. Cookies can also enable us to track and target the interests of our users to enhance the experience on our site. Usage of a cookie is in no way linked to any personally identifiable information on our site.</p>
+
+    <p>This web site contains links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.</p>
+</section>
+
+            </article>
+        </main>
+
+        <style>
+    form * {
+        box-sizing: border-box;
+    }
+
+    input[type="text"], input[type="email"],  input[type="tel"], textarea {
+        outline: none;
+        border: none;
+        font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+        background-color: #fefefe;
+        color: #121212;
+        padding: 5px 10px;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        font-size: 17px;
+    }
+
+    /* Hiding the honeypot */
+    input[name="unsubscribe_me"] {
+        display: inline-block;
+        height: 0;
+        width: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        outline: none;
+    }
+
+    #gist input[type="text"], #gist input[name="email"] {
+        background-color: rgba(254,254,254,0);
+        color: #fefefe;
+    }
+
+    #gist input::-webkit-input-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input::-moz-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input:-ms-input-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input:-moz-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input[type="text"] {
+        display: none;
+    }
+
+    #gist input[name="email"] {
+        width: 75vw;
+        margin-top: 3em;
+    }
+
+    #gist input {
+        border-bottom: 2px solid rgba(254,254,254,.5);
+    }
+
+    #gist input:focus {
+        border-color: #fefefe;
+    }
+
+    #gist input:focus::-webkit-input-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    #gist input:focus::-moz-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    #gist input:focus:-ms-input-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    #gist input:focus:-moz-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    button[type="submit"] {
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+    }
+
+    #gist button[name="submit-email"] {
+        background-color: rgba(254, 254, 254, 0);
+        color: #fefefe;
+        border-color: #fefefe;
+        margin: 1.5em 0 3em 0;
+    }
+
+    @media screen and (min-width: 600px) {
+        #gist input[name="email"] {
+            width: 322px;
+        }
+
+        #gist button[name="submit-email"] {
+            background-color: #fefefe;
+            color: #9a0007;
+        }
+
+    }
+
+    @media screen and (min-width: 900px) {
+        #gist input[type="text"] {
+            display: inline-block;
+            margin-top: 3em;
+            width: 15vw;
+        }
+
+        #gist #form-email-wrapper {
+            text-align: right;
+        }
+
+            #gist input[name="email"] {
+                margin-top: 1em;
+                width: 30.2vw;
+            }
+
+        #gist .button {
+            box-shadow: 0px 0px 2px 0px rgba(18,18,18,.5), 0px 2px 2px 0px rgba(18,18,18,.5);
+        }
+
+        #gist .button:hover {
+            box-shadow: 0px 0px 6px 0px rgba(18,18,18,.5), 0px 6px 6px 0px rgba(18,18,18,.5);
+        }
+
+        #gist .button:active {
+            box-shadow: 0px 0px 2px 0px rgba(18,18,18,.5), 0px 2px 2px 0px rgba(18,18,18,.5);
+        }
+    }
+</style>
+
+        <script src="/scripts/transition-nav.js" defer></script>
+
+<footer>
+    <div class="logo-wrapper">
+      <svg class="logo"
+        alt="Hipopla logo"
+        onclick="location.href = 'index.html';"
+        baseProfile="full"
+        viewbox="0 0 160 90 "
+        preserveAspectRatio="xMinYMin meet"
+        xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+          <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;text=HIPOLAREST');
+
+            .hipopla {
+              font-family: 'Amatic SC';
+            }
+
+            .hipopla {
+              font-size: 50px;
+              fill: #62e6f3;
+            }
+
+            .yolk {
+              fill: #f6a932;
+            }
+          </style>
+        </defs>
+
+        <g>
+          <text class="hipopla" x="5" y="45">HIP</text>
+          <text class="hipopla" x="90" y="45">PLA</text>
+        </g>
+
+        <g transform="translate(45 5) scale(1.05)">
+
+          <!-- <rect x="0" y="0" width="44.6" height="42.2" stroke-width="1" stroke="#000" fill="none"/> -->
+
+          <path fill="none" stroke="#f6a932" stroke-width="1.5" stroke-linecap="round"
+            d="M 22.5 5
+            q -15 -4.5 -14.5 6
+            q 0 3 -2 6
+            q -4 6.5 1 14
+            q 1 1.5 2 2
+            q 3.5 1.5 6 3
+            q 6 4 16 1
+            q 17 -6 2 -25
+            q -1.75 -2 -2.5 -4
+            q -1 -2.5 -5 -2.5
+            q -2 -.2 -2.75 -.4
+            "/>
+
+          <path class="yolk" stroke-width="0" stroke-linecap="round" fill-rule="evenodd"
+            d="M 19 10.5
+            a 6.75 6.75 0 1 1 -.001 0
+            m 0.2 1.25
+            a 5.5 5.5 0 0 0 -5.168 3.619
+            a 1.8 1.8 0 1 0 3.491 0.616
+            q .2 -2.5 2.8 -2.2
+            a .95 .95 0 0 0 .001 -1.9
+            "/>
+        </g>
+      </svg>
+
+    </div>
+
+    <div class="menu-wrapper">
+        <ul class="menu">
+            <li>MENU</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/2018/02/16/real-life-experience.html">About</a></li>
+            <li><a href="/policy/">Policy &amp; Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a class="button donate custom-dbox-popup" href="https://donorbox.org/vipond-for-congress-website-donations">Donate</a></li>
+        </ul>
+    </div>
+
+    <div class="form-wrapper">
+        <form action="https://getsimpleform.com/messages?form_api_token=c826bf93cc0f701979110234068b770a" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+          <input type='hidden' name='redirect_to' value='https://vipondforcongress.com/email/thank-you.html' />
+          <!-- all your input fields here....the first one is a honeypot -->
+          <input type="tel" name="unsubscribe_me" value="" tabindex="-1" autocomplete="off" />
+          <input type="email" name="email" value="" placeholder="Email" aria-label="email" required /><button class="button" type="submit" name="submit-email">Subscribe to newsletter</button>
+        </form>
+    </div>
+
+    <p id="legal"><a href="/privacy/" style="text-decoration: underline;">Privacy</a><br><br>&copy; 2017 Jennifer Vipond<br><a href="https://github.com/jennifervipond/jennifervipond.github.io#vipond-for-congress" target="_blank" rel="noopener"></p>
+
+    <!-- <img src="/images/GitHub-Mark-Light-32px.png" alt="GitHub icon" style="height: 15px; vertical-align: middle;"> View on Github</a> -->
+
+    <script defer>
+        let css = [
+            {'name': 'normalize', 'media': 'all'},
+            {'name': 'deferred', 'media': 'all'},
+            {'name': '600', 'media': '(min-width: 600px)'},
+            {'name': '900', 'media': '(min-width: 900px)'}
+        ],description = document.querySelector('meta[name="description"]');
+        css.forEach(function(e,i,a) {
+            var e = document.createElement('link');
+            e.rel = 'stylesheet';
+            e.href = '/css/' + a[i].name + '.css';
+            e.type = 'text/css';
+            e.media = a[i].media;
+            description.parentNode.insertBefore(e, description);
+        })
+    </script>
+</footer>
+
+    </body>
+</html>

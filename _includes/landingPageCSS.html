@@ -1,0 +1,74 @@
+<style>
+    .landing-page {
+        height: 100vh;
+    }
+
+        .landing-page #gist-wrapper {
+            text-align: center;
+            height: 100%;
+        }
+
+            #gist h2 {
+                font-family: 'Martel', Georgia, sans-serif;
+                color: #fefefe;
+                margin: .67em 0;
+                font-size: 22px;
+                line-height: 1.58;
+                font-weight: 300;
+            }
+
+            #gist #dr-jennifer-hoppe {
+                display: none;
+            }
+
+            #gist #a-prescription {
+                display: block;
+            }
+
+    @media screen and (min-width: 600px) {
+        .landing-page #gist-wrapper {
+            align-items: center;
+            padding: 0 10vw;
+        }
+
+            .landing-page #gist {
+                text-align: right;
+            }
+
+                #gist #a-prescription {
+                    display: inline;
+                }
+
+                #gist #dr-jennifer-hoppe {
+                    display: inline;
+                }
+
+                #gist #for-congress {
+                    display: none;
+                }
+
+                #gist #slogan {
+                    display: inline;
+                }
+    }
+
+    @media screen and (min-width: 900px) {
+        #gist h2 {
+            font-size: 30px;
+        }
+    }
+
+    .pseudo-landing-page {
+        height: 100vh;
+    }
+
+    @media screen and (max-height: 550px) {
+        .landing-page {
+            height: 550px;
+        }
+
+        .pseudo-landing-page {
+            height: 550px;
+        }
+    }
+</style>

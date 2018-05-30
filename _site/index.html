@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){});
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58906424-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-58906424-3');
+        </script>
+        <!-- End Google Analytics -->
+
+        <title>Vote Vipond</title>
+
+        <meta charset="utf-8">
+        <meta name="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/images/vipond-for-congress.ico">
+
+        <noscript>
+            <link rel="stylesheet" href="/css/normalize.css">
+            <link rel="stylesheet" href="/css/deferred.css">
+            <link rel="stylesheet" href="/css/600.css" media="(min-width: 600px)">
+            <link rel="stylesheet" href="/css/900.css" media="(min-width: 900px)">
+        </noscript>
+
+        <meta name="description" content="Vote Dr. Jennifer Hoppe Vipond to represent Wisconsin's Fifth District!">
+        <meta name="keywords" content="jennifer, vipond, wisconsin, congress, 2018, moderate, republican, democrat, doctor">
+        <meta name="author" content="Alex Vipond">
+
+        <script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
+        <script> window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' } </script>
+    </head>
+
+    <body>
+        <style media="screen">
+    * {margin: 0; padding: 0;}
+
+    html,body {
+        background-color: #fefefe;
+        color: #121212;
+        width: 100%;
+        font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        letter-spacing: .013rem;
+    }
+
+    a {
+        text-decoration: none;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+
+    a:hover {
+        opacity: .7;
+        text-shadow: none;
+    }
+
+    .button {
+        padding: 7.5px 12.5px 7.5px 12.5px;
+        margin: .67em .67em .67em 0;
+        border-radius: 18.5px;
+        border-width: 1.5px;
+        border-style: solid;
+        font-size: 17px;
+        -webkit-transition: all .15s ease;
+        transition: all .15s ease;
+        display: inline-block;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+        -webkit-user-select: none;
+        -moz-user-select: -moz-none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu-icon text {
+        font-family: 'Nunito Sans';
+        font-size: 17px;
+    }
+
+    .menu-icon path {
+        stroke-dashoffset: 0;
+        -webkit-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+
+    .menu-icon::selection {
+        background-color: transparent;
+    }
+
+    .menu-icon::-moz-selection {
+        background-color: transparent;
+    }
+
+    .menu-icon-wrapper {
+        -webkit-user-select: none;
+        -moz-user-select: -moz-none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu-icon-wrapper::selection {
+        background-color: transparent;
+    }
+
+    .menu-icon-wrapper::-moz-selection {
+        background-color: transparent;
+    }
+
+    .open-menu .menu-icon path {
+        stroke-dashoffset: -194.77;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 10px 10px 6px 10px;
+        align-items: center;
+        color: #fefefe;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+    }
+
+        nav .social-wrapper {
+            display: none;
+        }
+
+        nav .logo-wrapper {
+            display: none;
+        }
+
+        nav .menu {
+            position: absolute;
+            display: inline-block;
+            text-align: left;
+            top: 0;
+            right: 0;
+            height: calc(100vh - 5.5em + 11px);
+            width: 124px;
+            background-color: #9a0007;
+            list-style-type: none;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+            padding: 5.5em 40px 0 40px;
+            margin: 0;
+            -webkit-transform: translateX(204px) scaleX(0);
+            transform: translateX(204px) scaleX(0);
+        }
+
+            nav li {
+                display: block;
+                margin: 1em 0 0 0;
+                font-size: 17px;
+            }
+
+            nav li:last-child {
+                position: absolute;
+                bottom: 4em;
+            }
+
+                nav li:last-child .social-icon {
+                    width: 45px;
+                    fill: #fefefe;
+                }
+
+                nav li:last-child .social-icon:first-of-type {
+                    margin: 0 10px 10px 0;
+                }
+
+            nav a {
+                color: #fefefe;
+            }
+
+            nav .donate {
+                display: inline-block;
+                background-color: transparent;
+                color: #fefefe;
+                border-color: #fefefe;
+                margin: 0;
+            }
+
+            nav .donate:hover {
+                background-color: #fefefe;
+                color: #9a0007;
+                opacity: 1;
+            }
+
+        nav .mobile-donate-wrapper {
+            display: inline-block;
+            width: 49.9%;
+            text-align: left;
+        }
+
+        nav .menu-icon-wrapper {
+            display: inline-block;
+            width: 49.9%;
+            text-align: right;
+        }
+
+            nav .menu-icon {
+                display: inline-block;
+            }
+
+            nav .menu-icon text {
+                fill: #fefefe;
+            }
+
+            nav .menu-icon path {
+                stroke: #fefefe;
+                fill: rgba(0, 0, 0, 0);
+            }
+
+        nav .open-menu .menu {
+            -webkit-transform: translateX(0) scaleX(1);
+            transform: translateX(0) scaleX(1);
+            box-shadow: 0 0 100vw 20vw #121212;
+        }
+
+    @media screen and (min-width: 600px) {
+        nav {
+            padding: 1em 10vw;
+        }
+
+            nav a:not(.donate) {
+                text-shadow: 0px 1px 4px rgba(18,18,18,0.5);
+            }
+
+        nav .logo-wrapper {
+            display: inline-block;
+            text-align: left;
+            width: 64.33px;
+        }
+
+            nav .logo {
+                height: 35px;
+                width: 44.33px;
+                margin-top: .2em;
+                -webkit-transition: all .2s ease;
+                transition: all .2s ease;
+                z-index: 0;
+                position: relative;
+            }
+
+            nav .logo path {
+                stroke: #fefefe;
+            }
+
+        nav .mobile-donate-wrapper {
+            display: none;
+        }
+
+        nav .social-wrapper {
+            display: flex;
+            flex-direction: row;
+            margin: .6em 0 0 0;
+            position: relative;
+            z-index: 0;
+            width: 10vw;
+            align-items: center;
+        }
+
+            nav .social-wrapper .social-icon {
+                height: 30px;
+                width: auto;
+                margin-right: 10px;
+                fill: #fefefe;
+            }
+
+            nav .social-wrapper .hashtag {
+                display: none;
+            }
+
+        nav .menu-wrapper {
+            text-align: right;
+            display: inline-block;
+            width: calc(99.9vw - 10vw - 64.33px);
+            margin-top: .6em;
+        }
+
+            nav .menu {
+                position: static;
+                text-align: right;
+                height: auto;
+                width: auto;
+                background-color: transparent;
+                padding: 0;
+                -webkit-transform: translateX(0px) scaleX(1);
+                transform: translateX(0px) scaleX(1);
+            }
+
+            nav .open-menu .menu {
+                background-color: transparent;
+                box-shadow: none;
+            }
+
+                nav li {
+                    display: inline-block;
+                    margin: 0 1vw;
+                }
+
+                nav li:last-child {
+                    display: none;
+                }
+
+                nav li:nth-last-child(2) {
+                    margin: 0 0 0 1vw;
+                }
+
+                    nav .donate {
+                        margin: 0;
+                        background-color: #fefefe;
+                        color: #9a0007;
+                    }
+
+            nav .menu-icon-wrapper {
+                display: none;
+            }
+    }
+
+    @media screen and (min-width: 900px) {
+        .button {
+            border-radius: 4px;
+            box-shadow: 0px 2px 2px 0px rgba(18,18,18,.5);
+        }
+
+        .button:hover {
+            -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+            cursor: pointer;
+            box-shadow: 0px 6px 6px 0px rgba(18,18,18,.5);
+            opacity: 1;
+        }
+
+        .button:active {
+            -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+            box-shadow: 0px 2px 2px 0px rgba(18,18,18,.5);
+        }
+
+        nav logo-wrapper {
+            width: 19.9vw;
+        }
+
+        nav .social-wrapper {
+            width: 20vw;
+        }
+
+            nav .social-wrapper a {
+                line-height: 0;
+            }
+
+            nav .social-wrapper .social-icon {
+                height: 23px;
+            }
+
+            nav .social-wrapper .hashtag {
+                vertical-align: top;
+                display: inline-block;
+                font-weight: 400;
+                font-size: 19px;
+            }
+
+        nav .logo-wrapper {
+            width: 19.9vw;
+        }
+
+            nav .logo:hover {
+                opacity: .7;
+                cursor: pointer;
+            }
+
+        nav .menu-wrapper {
+            width: 60vw;
+        }
+    }
+</style>
+
+        <nav class="nav">
+  <div class="logo-wrapper">
+    <svg class="logo" alt="Hipopla logo" onclick="location.href = '/';" version="1.1"
+      baseProfile="full"
+      viewbox="0 0 160 90 "
+      preserveAspectRatio="xMinYMin meet"
+      xmlns="http://www.w3.org/2000/svg">
+
+      <defs>
+        <style type="text/css">
+          @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;text=HIPOLAREST');
+
+          .hipopla {
+            font-family: 'Amatic SC';
+          }
+
+          .hipopla {
+            font-size: 50px;
+            fill: #62e6f3;
+          }
+
+          .yolk {
+            fill: #f6a932;
+          }
+        </style>
+      </defs>
+
+      <g>
+        <text class="hipopla" x="5" y="45">HIP</text>
+        <text class="hipopla" x="90" y="45">PLA</text>
+      </g>
+
+      <g transform="translate(45 5) scale(1.05)">
+
+        <!-- <rect x="0" y="0" width="44.6" height="42.2" stroke-width="1" stroke="#000" fill="none"/> -->
+
+        <path fill="none" stroke="#f6a932" stroke-width="1.5" stroke-linecap="round"
+          d="M 22.5 5
+          q -15 -4.5 -14.5 6
+          q 0 3 -2 6
+          q -4 6.5 1 14
+          q 1 1.5 2 2
+          q 3.5 1.5 6 3
+          q 6 4 16 1
+          q 17 -6 2 -25
+          q -1.75 -2 -2.5 -4
+          q -1 -2.5 -5 -2.5
+          q -2 -.2 -2.75 -.4
+          "/>
+
+        <path class="yolk" stroke-width="0" stroke-linecap="round" fill-rule="evenodd"
+          d="M 19 10.5
+          a 6.75 6.75 0 1 1 -.001 0
+          m 0.2 1.25
+          a 5.5 5.5 0 0 0 -5.168 3.619
+          a 1.8 1.8 0 1 0 3.491 0.616
+          q .2 -2.5 2.8 -2.2
+          a .95 .95 0 0 0 .001 -1.9
+          "/>
+      </g>
+    </svg>
+
+  </div>
+
+  <div class="social-wrapper">
+    <a href="https://facebook.com/Hipopla" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon" id="facebook-desktop">
+        <path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z" />
+      </svg>
+    </a>
+
+    <a href="https://www.instagram.com/hipopla_resto/" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon insta" id="insta-desktop">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+      </svg>
+    </a>
+
+    <!-- <a href="https://www.facebook.com/hashtag/Hipopla?source=feed_text&pnref=story" target="_blank" rel="noopener" class="hashtag">#Hipopla</a> -->
+  </div>
+
+  <div class="menu-wrapper">
+    <ul class="menu">
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/nosotros/">Nosotros</a></li>
+      <!-- <li><a href="/blog/">Blog</a></li> -->
+      <!-- <li><a href="/contacto/">Contacto</a></li> -->
+      <li>
+        <a href="https://facebook.com/Hipopla" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon" id="facebook-mobile">
+            <path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z" />
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/hipopla_resto/" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon insta" id="insta-mobile">
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+          </svg>
+        </a>
+
+        <!-- <br>
+
+        <a href="https://www.facebook.com/hashtag/Hipopla?source=feed_text&pnref=story" target="_blank" rel="noopener" class="hashtag">#Hipopla</a> -->
+      </li>
+    </ul>
+  </div>
+
+  <div class="menu-icon-wrapper">
+    <svg class="menu-icon" onclick="openMenu()" baseProfile="tiny" width="152" height="66" viewBox="0 0 152 66" preserveAspectRatio="xMinYMin meet">
+      <path d="M120 64 A 31 31 0 1 1 120.00001 64 H -120" stroke-width="2" fill-opacity="1" stroke-dasharray="194.77" stroke-linecap="round"/>
+      <text x="120" y="33" text-anchor="middle" dominant-baseline="central">Menu</text>
+    </svg>
+  </div>
+
+  <script src="/scripts/open-menu.js" defer></script>
+</nav>
+
+        <style>
+    form * {
+        box-sizing: border-box;
+    }
+
+    input[type="text"], input[type="email"],  input[type="tel"], textarea {
+        outline: none;
+        border: none;
+        font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+        background-color: #fefefe;
+        color: #121212;
+        padding: 5px 10px;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        font-size: 17px;
+    }
+
+    /* Hiding the honeypot */
+    input[name="unsubscribe_me"] {
+        display: inline-block;
+        height: 0;
+        width: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        outline: none;
+    }
+
+    #gist input[type="text"], #gist input[name="email"] {
+        background-color: rgba(254,254,254,0);
+        color: #fefefe;
+    }
+
+    #gist input::-webkit-input-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input::-moz-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input:-ms-input-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input:-moz-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input[type="text"] {
+        display: none;
+    }
+
+    #gist input[name="email"] {
+        width: 75vw;
+        margin-top: 3em;
+    }
+
+    #gist input {
+        border-bottom: 2px solid rgba(254,254,254,.5);
+    }
+
+    #gist input:focus {
+        border-color: #fefefe;
+    }
+
+    #gist input:focus::-webkit-input-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    #gist input:focus::-moz-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    #gist input:focus:-ms-input-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    #gist input:focus:-moz-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    button[type="submit"] {
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+    }
+
+    #gist button[name="submit-email"] {
+        background-color: rgba(254, 254, 254, 0);
+        color: #fefefe;
+        border-color: #fefefe;
+        margin: 1.5em 0 3em 0;
+    }
+
+    @media screen and (min-width: 600px) {
+        #gist input[name="email"] {
+            width: 322px;
+        }
+
+        #gist button[name="submit-email"] {
+            background-color: #fefefe;
+            color: #9a0007;
+        }
+
+    }
+
+    @media screen and (min-width: 900px) {
+        #gist input[type="text"] {
+            display: inline-block;
+            margin-top: 3em;
+            width: 15vw;
+        }
+
+        #gist #form-email-wrapper {
+            text-align: right;
+        }
+
+            #gist input[name="email"] {
+                margin-top: 1em;
+                width: 30.2vw;
+            }
+
+        #gist .button {
+            box-shadow: 0px 0px 2px 0px rgba(18,18,18,.5), 0px 2px 2px 0px rgba(18,18,18,.5);
+        }
+
+        #gist .button:hover {
+            box-shadow: 0px 0px 6px 0px rgba(18,18,18,.5), 0px 6px 6px 0px rgba(18,18,18,.5);
+        }
+
+        #gist .button:active {
+            box-shadow: 0px 0px 2px 0px rgba(18,18,18,.5), 0px 2px 2px 0px rgba(18,18,18,.5);
+        }
+    }
+</style>
+
+        <style>
+    header {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 33vh;
+        background-image: url("/images/landing-page-gradient.svg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .bg-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: grayscale(100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-img-center-top {
+        background-position: center top;
+    }
+
+    .bg-img-left-top {
+        background-position: left top;
+    }
+
+    header #gist-wrapper {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        box-sizing: border-box;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0 5vw;
+        margin: 0;
+    }
+
+        header #gist-wrapper #gist {
+            width: 100%;
+        }
+
+            #gist h1 {
+                font-family: 'Martel', Georgia, sans-serif;
+                color: #fefefe;
+                font-size: 40px;
+                line-height: 1.58;
+                font-weight: 400;
+                margin: .4em 0;
+            }
+
+            #gist h1, #gist h2 {
+                text-shadow: 0px 1px 4px rgba(18,18,18,0.5);
+            }
+
+    @media screen and (min-width: 600px) {
+        #gist h1 {
+            font-weight: 300;
+            font-size: 36px;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        header #gist-wrapper {
+            padding: 0 10vw;
+        }
+
+            #gist h1 {
+                font-size: 54px;
+            }
+    }
+
+    .pseudo-header {
+        height: 33vh;
+    }
+</style>
+
+        <style>
+    .landing-page {
+        height: 100vh;
+    }
+
+        .landing-page #gist-wrapper {
+            text-align: center;
+            height: 100%;
+        }
+
+            #gist h2 {
+                font-family: 'Martel', Georgia, sans-serif;
+                color: #fefefe;
+                margin: .67em 0;
+                font-size: 22px;
+                line-height: 1.58;
+                font-weight: 300;
+            }
+
+            #gist #dr-jennifer-hoppe {
+                display: none;
+            }
+
+            #gist #a-prescription {
+                display: block;
+            }
+
+    @media screen and (min-width: 600px) {
+        .landing-page #gist-wrapper {
+            align-items: center;
+            padding: 0 10vw;
+        }
+
+            .landing-page #gist {
+                text-align: right;
+            }
+
+                #gist #a-prescription {
+                    display: inline;
+                }
+
+                #gist #dr-jennifer-hoppe {
+                    display: inline;
+                }
+
+                #gist #for-congress {
+                    display: none;
+                }
+
+                #gist #slogan {
+                    display: inline;
+                }
+    }
+
+    @media screen and (min-width: 900px) {
+        #gist h2 {
+            font-size: 30px;
+        }
+    }
+
+    .pseudo-landing-page {
+        height: 100vh;
+    }
+
+    @media screen and (max-height: 550px) {
+        .landing-page {
+            height: 550px;
+        }
+
+        .pseudo-landing-page {
+            height: 550px;
+        }
+    }
+</style>
+
+
+        <header class="landing-page">
+            <style>
+                #bg-img {
+                    background-image: url(/images/jv-green-shirt-headshot-600.jpg);
+                    opacity: .55;
+                    background-position: center top;
+                }
+
+                @media screen and (min-width: 600px) {
+                    #bg-img {
+                        background-image: url(/images/jv-paisley-headshot-cropped-1280.jpg);
+                        background-position: left top;
+                    }
+                }
+            </style>
+            <div id="bg-img" class="bg-img"></div>
+
+            <div id="gist-wrapper">
+                <div id="gist">
+                    <h1><span id="a-prescription">A Prescription </span><span id="for-change">for Change</span></h1>
+                    <h2><span id="vote">Vote&nbsp;</span><span id="dr-jennifer-hoppe">for Dr. Jennifer Hoppe </span><span id="vipond">Vipond</span></h2>
+
+                    <form action="https://getsimpleform.com/messages?form_api_token=c826bf93cc0f701979110234068b770a" method="post">
+                        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+                        <input type='hidden' name='redirect_to' value='https://vipondforcongress.com/email/thank-you.html' />
+                        <!-- all your input fields here....the first one is a honeypot -->
+                        <input type="tel" name="unsubscribe_me" value="" tabindex="-1" autocomplete="off" />
+                        <input type="text" name="first-name" value="" placeholder="First name" autocapitalize="words" aria-label="first name" />
+                        <input type="text" name="last-name" value="" placeholder="Last name" autocapitalize="words" aria-label="last name" />
+                        <div class="email-wrapper">
+                            <input type="email" name="email" value="" placeholder="Email" aria-label="email" required />
+                        </div><br>
+                        <button class="button" type="submit" name="submit-email">Subscribe to newsletter</button>
+                    </form>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="pseudo-landing-page"></div>
+
+        <style>
+    main .blog-post {
+        padding: 29px 5vw;
+    }
+
+        main .blog-post > p:first-of-type {
+            margin-top: 2em;
+        }
+
+        main .blog-post .post-summary {
+            border-top: 2px solid #9a0007;
+            padding-top: 2.4em;
+        }
+
+        main .blog-post .post-summary h2, main .blog-post .post-summary h3 {
+            text-align: left;
+        }
+
+        main .blog-post .post-summary h2 a {
+            color: #121212;
+        }
+
+        /* Second child because the first child is an empty h2 */
+        main .blog-post .post-summary:nth-child(2) {
+            border: none;
+        }
+
+        main .blog-post img {
+            width: 100%;
+        }
+
+    @media screen and (min-width: 600px) {
+        main .blog-post {
+            padding: 1.6em 10vw;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        main {
+            padding: 4.8em 0 1.6em 0;
+        }
+
+        main .blog-post {
+            padding: 1.6em calc((100vw - 700px) / 2);
+        }
+
+            main .blog-post img {
+                width: 700px;
+            }
+
+            main .blog-post h2, main .blog-post h3 {
+                text-align: center;
+            }
+    }
+</style>
+
+        <style>
+    main section:first-child {
+        padding-top: 82px;
+    }
+
+    main .flex svg {
+        stroke: #9a0007;
+        height: 150px;
+        -webkit-transition: all 2s ease;
+        transition: all 2s ease;
+    }
+
+    main .theme svg, main .accent svg {
+        stroke: #fefefe;
+    }
+
+    @media screen and (min-width: 600px) {
+        main .flex:first-child {
+            padding-top: 4em;
+        }
+
+            main .flex svg {
+                height: 200px;
+            }
+    }
+
+    @media screen and (min-width: 900px) {
+        main {
+            padding-top: 0;
+        }
+
+        main section:first-child {
+            padding-top: 4.8em;
+            padding-bottom: 4.8em;
+        }
+
+            main .flex svg {
+                height: 200px;
+                margin: 4em 0;
+            }
+
+            #common-sense-icon {
+                margin-bottom: 7em;
+            }
+    }
+</style>
+
+
+        <main>
+            <article>
+                <section class="blog-post">
+    <h2>Nice to meet you!</h2>
+    <h3>My name is Dr. Jennifer Hoppe Vipond, and I am a Republican running to
+        represent Wisconsin’s Fifth Congressional District in the United States
+        House of Representatives.</h3>
+    <h3>This is why I'm running:</h3>
+</section>
+
+<section class="flex theme">
+    <div class="gist">
+        <h2>A Prescription for Change</h2>
+        <h3>I would like to bring back a Congress where real life experience is more influential than special interests.</h3>
+        <h3><a href="/2018/02/16/real-life-experience.html">Learn more...</a></h3>
+    </div>
+
+    <div class="paragraphs">
+        <svg id="common-sense-icon" class="animate"
+            baseProfile="full"
+            viewbox="0 0 105 125"
+            preserveAspectRatio="xMinYMin meet">
+
+            <!-- Bulb circle centered at 50, 40 -->
+            <g transform="translate(2.5 13)" stroke-width="2.2" stroke-linecap="round" fill="none">
+                <path
+                    d="M 25.251262658470836 64.74873734152916
+                    A 35 35 0 1 1 74.74873734152916 64.74873734152916
+                    Q 68 73 68 90
+                    a 18 18 0 0 1 -36 0
+                    Q 32 73 25.251262658470836 64.74873734152916
+                    M 68 77.5
+                    l -27 0
+                    M 68 85
+                    l -26.5 0
+                    M 67 92.5
+                    l -25 0"/>
+                <path
+                    d="M 47.5 62.5
+                    l -2.5 -27.5
+                    q -1 -5 -5 -5
+                    q -4 0 -5 5
+                    q -.5 5 5 5
+                    l 20 0
+                    q 5.5 0 5 -5
+                    q -1 -5 -5 -5
+                    q -4 0 -5 5
+                    l -2.5 27.5"/>
+                <path class="reverse"
+                    d="M 50 -10
+                    v 8
+                    M 71.91855733945387 -4.939702314958353
+                    L 68.41158816514125 2.2506500554349813
+                    M 28.081442660546124 -4.939702314958346
+                    L 31.588411834858743 2.2506500554349884
+                    M 89.4005376803361 9.21692623371709
+                    L 83.09645165148233 14.142218036322355
+                    M 10.599462319663907 9.216926233717079
+                    L 16.90354834851768 14.142218036322348
+                    M 98.90738003669028 29.604415459112033
+                    L 91.08219923081984 31.26770898565411
+                    M 1.0926199633097156 29.604415459112033
+                    L 8.917800769180161 31.26770898565411"/>
+            </g>
+        </svg>
+    </div>
+</section>
+
+<section class="flex paragraphs-gist">
+    <div class="gist">
+        <h2>The Challenge of Medical Care</h2>
+        <h3>We need physicians involved in the development of this country's next health plan.</h3>
+        <h3><a href="/2018/02/17/the-challenge-of-medical-care.html">Learn more...</a></h3>
+    </div>
+
+    <div class="paragraphs" style="text-align: left;">
+        <svg id="medical-care-icon" class="animate"
+            baseProfile="full"
+            viewbox="0 0 155 95"
+            preserveAspectRatio="xMidYMid meet">
+
+            <g transform="scale(2.3)" stroke-width="1.2" stroke-linecap="round" fill="none">
+                <path  class="reverse" transform="translate(-2 17) rotate(-45)"
+                    d="M 5 7
+                    a 2 2 0 1 1 .0001 0
+                    q 0 15 5 15
+                    M 15 7
+                    a 2 2 0 1 1 .0001 0
+                    q 0 15 -5 15
+                    q 0 20 10 20
+                    a 7.5 7.5 0 0 0 5.303300858899107 -12.803300858899107
+                    a 7.5 7.5 0 0 1 5.303300858899107 -12.803300858899107
+                    a 7.5 7.5 0 0 1 7.5 7.5
+                    a 4 4 0 1 1 -.0001 0
+                    m 0 3
+                    a 1 1 0 1 0 .0001 0"/>
+
+                <path
+                    d="M 36.2 1.8
+                    v 36"/>
+            </g>
+        </svg>
+    </div>
+</section>
+
+<section class="flex accent">
+    <div class="gist">
+        <h2>The Opioid Epidemic</h2>
+        <h3>We need more healthcare providers trained to treat and prevent addiction.</h3>
+        <h3><a href="/2018/02/17/the-opioid-epidemic.html">Learn more...</a></h3>
+    </div>
+
+    <div class="paragraphs">
+        <svg id="opioid-epidemic-icon" class="animate"
+            baseProfile="full"
+            viewbox="0 0 120 100"
+            preserveAspectRatio="xMinYMin meet">
+
+            <g stroke-width="2" stroke-linecap="round" fill="none">
+                <g stroke-linejoin="round">
+                    <path d="M 50 5
+                        h 45
+                        v 5
+                        h 5
+                        v 15
+                        h -55
+                        v -15
+                        h 5
+                        v -5
+                        m 0 20
+                        v 70
+                        h 45
+                        v -20
+                        h -25
+                        h 25
+                        v -7.5
+                        h -25
+                        h 25
+                        v -7.5
+                        h -25
+                        h 25
+                        v -35" />
+
+                    <path d="M 79 47.5
+                        v -10
+                        h 2
+                        a 2.5 2.5 0 1 1 0 5
+                        h -2
+                        l 10 10
+                        l -3.5 -3.5
+                        l 3.5 -3.5
+                        l -7 7" />
+                </g>
+
+                <path transform="rotate(-75 10 65)" d="M 10 70
+                    a 5 5 0 1 1 .0001 0
+                    v -10" />
+
+                <path transform="rotate(15 22.5 40)" d="M 22.5 45
+                    a 5 5 0 1 1 .0001 0
+                    v -10" />
+
+                <path transform="rotate(65 30 85)" d="M 30 90
+                    a 5 5 0 1 1 .0001 0
+                    v -10" />
+            </g>
+        </svg>
+    </div>
+</section>
+
+<section class="flex paragraphs-gist">
+    <div class="gist">
+        <h2>The Second Amendment</h2>
+        <h3>Real life experience dictates that gun ownership should be restricted to only those people who are legally eligible to own guns.</h3>
+        <h3><a href="/2018/02/17/the-second-amendment.html">Learn more...</a></h3>
+    </div>
+
+    <div class="paragraphs" style="text-align: left;">
+        <svg id="second-amendment-icon" class="animate"
+            baseProfile="full"
+            viewbox="0 0 110 100"
+            preserveAspectRatio="xMinYMin meet">
+
+            <g stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                <path d="M 10 5
+                    q -5 0 -5 40
+                    q 0 20 5 40
+                    q 2.5 10 10 10
+                    q 10 0 15 -10
+                    q 5 -10 -5 -14
+                    q -15 -5 -12.5 10
+                    q 1 5 5 5
+                    h 11 h -11
+                    q 4 0 5 -5
+                    h 8
+                    M 20 95
+                    h 65
+                    q 10 0 15 -10
+                    q 5 -10 -5 -14
+                    q -3.5 -1 -7 -1.2
+                    M 10 5
+                    h 65
+                    q -5 0 -5 40
+                    q 0 10 2.7 24.8
+                    h -50
+                    h 65" />
+
+                <path class="reverse" d="M 64.3 17.5
+                    h -50
+                    M 64 22.5
+                    h -50
+                    M 62.5 40
+                    h -50
+                    M 63.5 55
+                    h -50" />
+            </g>
+        </svg>
+    </div>
+</section>
+
+<section class="flex theme">
+    <div class="gist">
+        <h2>Women's Issues</h2>
+        <h3>In order to become successful and self-reliant citizens, women need control of their fertility.</h3>
+        <h3><a href="/2018/02/17/women-s-issues.html">Learn more...</a></h3>
+    </div>
+
+    <div class="paragraphs">
+        <svg class="animate" id="womens-issues-icon"
+            baseProfile="full"
+            viewbox="0 0 105 116"
+            preserveAspectRatio="xMinYMin meet">
+
+            <g stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="none">
+
+                <!-- face and neck -->
+                <path d="M 55 12.5
+                    q -5 -1.5 -10 0
+                    q -15 5 -15 30
+                    q 0 15 15 20
+                    q 5 2 10 0
+                    M 55 12.5
+                    q 15 5 15 30
+                    q 0 15 -15 20
+                    m 7 -2.5
+                    v 10
+                    m -24 -10
+                    v 10"/>
+
+                <!-- right hair -->
+                <path d="M 45 12.5
+                    q 0 -7.5 10 -7.5
+                    q 10 0 15 5
+                    q 5 5 12.5 30
+                    q 4 15 2.5 30
+                    q 0 4 -10 12.5
+                    q -4 3 -7.5 5
+                    q -4 -4 -5.6 -28"/>
+
+                <!-- left hair -->
+                <path d="M 47 6.5
+                    q -10 0 -16.5 5
+                    q -7.5 5 -12.5 30
+                    q -3 15 0 25
+                    q 2 3.5 3 3.5" />
+
+                <!-- scrubs -->
+                <path d="M 50 85
+                    q 4 3 8 5
+                    q -4 -2 -8 -5
+                    q 6 -4 12 -15
+                    m 23 0
+                    q 4 1 10 6.25
+                    q 6 4 6 20
+                    M 50 85
+                    q -6 -4 -12 -15
+                    q -2 -3 -4 -5
+                    q -15 4 -25 12.5
+                    q -6 4 -6 20" />
+
+                <!-- stethoscope top -->
+                <path d="M 35 105
+                    a 3 3 0 1 1 -.0001 0
+                    q 0 -25 -7.5 -25
+                    m -7.5 25
+                    a 3 3 0 1 1 -.0001 0
+                    q 0 -25 7.5 -25
+                    q 0 -10 10.5 -15" />
+
+                <!-- stethoscope bottom -->
+                <path class="reverse" d="M 76 99
+                    a 2 2 0 1 1 -.0001 0
+                    m 0 -4
+                    a 6 6 0 1 1 -.0001 0
+                    q 0 -6 -2 -11.5" />
+            </g>
+        </svg>
+    </div>
+</section>
+
+<section class="flex paragraphs-gist">
+    <div class="gist">
+        <h2>Tax Cuts</h2>
+        <h3>I will work to make sure the recent tax cuts translate into better jobs and higher wages for working Americans.</h3>
+        <h3><a href="/2018/02/17/tax-cuts.html">Learn more...</a></h3>
+    </div>
+
+    <div class="paragraphs" style="text-align: left;">
+        <svg id="tax-icon" class="animate"
+            baseProfile="full"
+            viewbox="0 0 107 68"
+            preserveAspectRatio="xMinYMin meet">
+
+            <g transform="translate(7 7) rotate(-10 50 50)" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" fill="none">
+                <path d="M 5 5
+                    h 90
+                    v 37
+                    h -90
+                    v -37
+                    m 37.5 37
+                    a 15 17.5 0 1 1 15 0
+                    m -42.5 -37
+                    a 10 10 0 0 1 -10 10
+                    m 0 17
+                    a 10 10 0 0 1 10 10
+                    m 70 0
+                    a 10 10 0 0 1 10 -10
+                    m 0 -17
+                    a 10 10 0 0 1 -10 -10" />
+
+                <path class="reverse" d="M 46 31
+                    a 4 4 0 1 0 4 -4
+                    a 4 4 0 1 1 4 -4
+                    m -4 14
+                    v -20" />
+
+                <path  transform="translate(0 -37) rotate(20 50 65.5)" d="M 92 47
+                    h 3
+                    v 10
+                    m 0 7
+                    v 20
+                    h -56
+                    m -31 0
+                    h -3
+                    v -9
+                    m 0 -11
+                    m 37.5 20
+                    m 21 -8.5
+                    a 15 17.5 0 0 1 -6 8.5
+                    m -3.5 -20
+                    m -4 4
+                    m -4 4
+                    m 4 -14
+                    m 0 20
+                    m -35 -31
+                    m -10 10
+                    m 0 17
+                    m 10 10
+                    m 70 0
+                    a 10 10 0 0 1 10 -10
+                    m 0 -17
+                    M -10 -10" />
+            </g>
+        </svg>
+    </div>
+
+</section>
+
+<script src="/scripts/animate-icons.js" defer></script>
+
+            </article>
+        </main>
+
+        <script src="/scripts/transition-nav.js" defer></script>
+
+<footer>
+    <div class="logo-wrapper">
+      <svg class="logo"
+        alt="Hipopla logo"
+        onclick="location.href = 'index.html';"
+        baseProfile="full"
+        viewbox="0 0 160 90 "
+        preserveAspectRatio="xMinYMin meet"
+        xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+          <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;text=HIPOLAREST');
+
+            .hipopla {
+              font-family: 'Amatic SC';
+            }
+
+            .hipopla {
+              font-size: 50px;
+              fill: #62e6f3;
+            }
+
+            .yolk {
+              fill: #f6a932;
+            }
+          </style>
+        </defs>
+
+        <g>
+          <text class="hipopla" x="5" y="45">HIP</text>
+          <text class="hipopla" x="90" y="45">PLA</text>
+        </g>
+
+        <g transform="translate(45 5) scale(1.05)">
+
+          <!-- <rect x="0" y="0" width="44.6" height="42.2" stroke-width="1" stroke="#000" fill="none"/> -->
+
+          <path fill="none" stroke="#f6a932" stroke-width="1.5" stroke-linecap="round"
+            d="M 22.5 5
+            q -15 -4.5 -14.5 6
+            q 0 3 -2 6
+            q -4 6.5 1 14
+            q 1 1.5 2 2
+            q 3.5 1.5 6 3
+            q 6 4 16 1
+            q 17 -6 2 -25
+            q -1.75 -2 -2.5 -4
+            q -1 -2.5 -5 -2.5
+            q -2 -.2 -2.75 -.4
+            "/>
+
+          <path class="yolk" stroke-width="0" stroke-linecap="round" fill-rule="evenodd"
+            d="M 19 10.5
+            a 6.75 6.75 0 1 1 -.001 0
+            m 0.2 1.25
+            a 5.5 5.5 0 0 0 -5.168 3.619
+            a 1.8 1.8 0 1 0 3.491 0.616
+            q .2 -2.5 2.8 -2.2
+            a .95 .95 0 0 0 .001 -1.9
+            "/>
+        </g>
+      </svg>
+
+    </div>
+
+    <div class="menu-wrapper">
+        <ul class="menu">
+            <li>MENU</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/2018/02/16/real-life-experience.html">About</a></li>
+            <li><a href="/policy/">Policy &amp; Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a class="button donate custom-dbox-popup" href="https://donorbox.org/vipond-for-congress-website-donations">Donate</a></li>
+        </ul>
+    </div>
+
+    <div class="form-wrapper">
+        <form action="https://getsimpleform.com/messages?form_api_token=c826bf93cc0f701979110234068b770a" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+          <input type='hidden' name='redirect_to' value='https://vipondforcongress.com/email/thank-you.html' />
+          <!-- all your input fields here....the first one is a honeypot -->
+          <input type="tel" name="unsubscribe_me" value="" tabindex="-1" autocomplete="off" />
+          <input type="email" name="email" value="" placeholder="Email" aria-label="email" required /><button class="button" type="submit" name="submit-email">Subscribe to newsletter</button>
+        </form>
+    </div>
+
+    <p id="legal"><a href="/privacy/" style="text-decoration: underline;">Privacy</a><br><br>&copy; 2017 Jennifer Vipond<br><a href="https://github.com/jennifervipond/jennifervipond.github.io#vipond-for-congress" target="_blank" rel="noopener"></p>
+
+    <!-- <img src="/images/GitHub-Mark-Light-32px.png" alt="GitHub icon" style="height: 15px; vertical-align: middle;"> View on Github</a> -->
+
+    <script defer>
+        let css = [
+            {'name': 'normalize', 'media': 'all'},
+            {'name': 'deferred', 'media': 'all'},
+            {'name': '600', 'media': '(min-width: 600px)'},
+            {'name': '900', 'media': '(min-width: 900px)'}
+        ],description = document.querySelector('meta[name="description"]');
+        css.forEach(function(e,i,a) {
+            var e = document.createElement('link');
+            e.rel = 'stylesheet';
+            e.href = '/css/' + a[i].name + '.css';
+            e.type = 'text/css';
+            e.media = a[i].media;
+            description.parentNode.insertBefore(e, description);
+        })
+    </script>
+</footer>
+
+    </body>
+</html>

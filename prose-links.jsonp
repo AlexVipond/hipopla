@@ -1,0 +1,20 @@
+---
+---
+callback([
+
+  {
+    "text": "Home",
+    "href": "/"
+  } ,
+
+  {
+    "text": "About",
+    "href": "/about/"
+  } ,
+
+  {
+    "text": "Privacy & Security",
+    "href": "/privacy/"
+  }
+
+])

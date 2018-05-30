@@ -1,0 +1,136 @@
+<style>
+    form * {
+        box-sizing: border-box;
+    }
+
+    input[type="text"], input[type="email"],  input[type="tel"], textarea {
+        outline: none;
+        border: none;
+        font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+        background-color: #fefefe;
+        color: #121212;
+        padding: 5px 10px;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        font-size: 17px;
+    }
+
+    /* Hiding the honeypot */
+    input[name="unsubscribe_me"] {
+        display: inline-block;
+        height: 0;
+        width: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        outline: none;
+    }
+
+    #gist input[type="text"], #gist input[name="email"] {
+        background-color: rgba(254,254,254,0);
+        color: #fefefe;
+    }
+
+    #gist input::-webkit-input-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input::-moz-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input:-ms-input-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input:-moz-placeholder {
+        color: rgba(254,254,254,.5);
+    }
+
+    #gist input[type="text"] {
+        display: none;
+    }
+
+    #gist input[name="email"] {
+        width: 75vw;
+        margin-top: 3em;
+    }
+
+    #gist input {
+        border-bottom: 2px solid rgba(254,254,254,.5);
+    }
+
+    #gist input:focus {
+        border-color: #fefefe;
+    }
+
+    #gist input:focus::-webkit-input-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    #gist input:focus::-moz-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    #gist input:focus:-ms-input-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    #gist input:focus:-moz-placeholder {
+        color: rgba(254,254,254,0);
+    }
+
+    button[type="submit"] {
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+    }
+
+    #gist button[name="submit-email"] {
+        background-color: rgba(254, 254, 254, 0);
+        color: #fefefe;
+        border-color: #fefefe;
+        margin: 1.5em 0 3em 0;
+    }
+
+    @media screen and (min-width: 600px) {
+        #gist input[name="email"] {
+            width: 322px;
+        }
+
+        #gist button[name="submit-email"] {
+            background-color: #fefefe;
+            color: #9a0007;
+        }
+
+    }
+
+    @media screen and (min-width: 900px) {
+        #gist input[type="text"] {
+            display: inline-block;
+            margin-top: 3em;
+            width: 15vw;
+        }
+
+        #gist #form-email-wrapper {
+            text-align: right;
+        }
+
+            #gist input[name="email"] {
+                margin-top: 1em;
+                width: 30.2vw;
+            }
+
+        #gist .button {
+            box-shadow: 0px 0px 2px 0px rgba(18,18,18,.5), 0px 2px 2px 0px rgba(18,18,18,.5);
+        }
+
+        #gist .button:hover {
+            box-shadow: 0px 0px 6px 0px rgba(18,18,18,.5), 0px 6px 6px 0px rgba(18,18,18,.5);
+        }
+
+        #gist .button:active {
+            box-shadow: 0px 0px 2px 0px rgba(18,18,18,.5), 0px 2px 2px 0px rgba(18,18,18,.5);
+        }
+    }
+</style>

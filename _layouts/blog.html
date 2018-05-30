@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){});
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58906424-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-58906424-3');
+        </script>
+        <!-- End Google Analytics -->
+
+        <title>Policy &amp; Blog</title>
+
+        <meta charset="utf-8">
+        <meta name="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/images/vipond-for-congress.ico">
+
+        <noscript>
+            <link rel="stylesheet" href="/css/normalize.css">
+            <link rel="stylesheet" href="/css/deferred.css">
+            <link rel="stylesheet" href="/css/600.css" media="(min-width: 600px)">
+            <link rel="stylesheet" href="/css/900.css" media="(min-width: 900px)">
+        </noscript>
+
+        <meta name="description" content="Vote Dr. Jennifer Hoppe Vipond to represent Wisconsin's Fifth District!">
+        <meta name="keywords" content="jennifer, vipond, wisconsin, congress, 2018, moderate, republican, democrat, doctor">
+        <meta name="author" content="Alex Vipond">
+
+        <script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
+        <script> window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' } </script>
+    </head>
+
+    <body>
+        {% include navCSS.html %}
+        {% include nav.html %}
+        {% include headerCSS.html %}
+
+        <header>
+            <div class="bg-img bg-img-center-top" style="background-image: url(/images/blog-media/capitol.jpg); opacity: .35;">
+            </div>
+
+            <div id="gist-wrapper">
+                <div id="gist">
+                    <h1>Policy &amp; Blog</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="pseudo-header"></div>
+
+        {% include blogPostCSS.html %}
+
+        <main>
+            <article>
+                <section class="blog-post">
+                    <h2>{{ page.title }}</h2>
+                    {{ content }}
+                </section>
+            </article>
+        </main>
+
+        {% include emailCSS.html %}
+        {% include footer.html %}
+    </body>
+</html>

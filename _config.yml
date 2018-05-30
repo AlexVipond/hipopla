@@ -1,0 +1,47 @@
+name: Hipopla Resto
+plugins:
+    - jekyll-sitemap
+markdown: kramdown
+prose:
+  rooturl: '_posts'
+  siteurl: 'https://hipopla.com'
+  relativeLinks: 'https://hipopla.com/prose-links.jsonp'
+  media: 'images/blog-media'
+  ignore:
+    - index.html
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /css
+    - /scripts
+    - .gitignore
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+          value: ""
+      - name: "date"
+        field:
+          element: "hidden"
+          value: CURRENT_DATETIME
+      - name: "excerpt"
+        field:
+          element: "textarea"
+          label: "Excerpt"
+          value: ""
+          placeholder: "Copy/paste excerpt here"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish this post?"
+          value: true
