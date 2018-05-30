@@ -1,13 +1,12 @@
 <svg version="1.1"
   baseProfile="full"
-  viewbox="0 0 32 32"
+  width="32"
+  height="32"
+  viewBox="0 0 32 32"
   preserveAspectRatio="xMinYMin meet"
   xmlns="http://www.w3.org/2000/svg">
 
   <g transform="translate(.7 1) scale(.65)">
-
-
-
     <path fill="none" stroke="#f6a932" stroke-width="3" stroke-linecap="round"
       d="M 22.5 5
       q -15 -4.5 -14.5 6

@@ -1,74 +1,180 @@
 <style>
+  .landing-page {
+    height: 100vh;
+  }
+
+    .landing-page #gist-wrapper {
+      text-align: center;
+      height: 100%;
+    }
+
+      #gist .hipopla-resto {
+        display: block;
+        animation: flicker 7s linear infinite;
+      }
+
+        #gist .hipopla-resto .logo {
+          width: 100%;
+          margin-bottom: calc(50vh - 30%);
+        }
+
+        @keyframes flicker {
+          from {
+            opacity: 1;
+          }
+
+          4% {
+            opacity: .9;
+          }
+
+          6% {
+            opacity: .85;
+          }
+
+          8% {
+            opacity: .95;
+          }
+
+          10% {
+            opacity: .90;
+          }
+
+          11% {
+            opacity: .922;
+          }
+
+          12% {
+            opacity: .9;
+          }
+
+          14% {
+            opacity: .95;
+          }
+
+          16% {
+            opacity: .98;
+          }
+
+          17% {
+            opacity: .9;
+          }
+
+          19% {
+            opacity: .93;
+          }
+
+          20% {
+            opacity: .99;
+          }
+
+          24% {
+            opacity: 1;
+          }
+
+          26% {
+            opacity: .94;
+          }
+
+          28% {
+            opacity: .98;
+          }
+
+          37% {
+            opacity: .93;
+          }
+
+          38% {
+            opacity: .5;
+          }
+
+          39% {
+            opacity: .96;
+          }
+
+          42% {
+            opacity: 1;
+          }
+
+          44% {
+            opacity: .97;
+          }
+
+          46% {
+            opacity: .94;
+          }
+
+          56% {
+            opacity: .9;
+          }
+
+          58% {
+            opacity: .9;
+          }
+
+          60% {
+            opacity: .99;
+          }
+
+          68% {
+            opacity: 1;
+          }
+
+          70% {
+            opacity: .9;
+          }
+
+          72% {
+            opacity: .95;
+          }
+
+          93% {
+            opacity: .93;
+          }
+
+          95% {
+            opacity: .95;
+          }
+
+          97% {
+            opacity: .93;
+          }
+
+          to {
+            opacity: 1;
+          }
+        }
+      /* #resto {
+        color: #f6a932;
+      } */
+
+  @media screen and (min-width: 600px) {
+    .landing-page #gist-wrapper {
+      align-items: center;
+      padding: 0 10vw;
+    }
+
+      .landing-page #gist {
+          text-align: right;
+      }
+  }
+
+  @media screen and (min-width: 900px) {
+    #hipopla {
+      font-size: 217px;
+    }
+  }
+
+  .pseudo-landing-page {
+    height: 100vh;
+  }
+
+  @media screen and (max-height: 550px) {
     .landing-page {
-        height: 100vh;
-    }
-
-        .landing-page #gist-wrapper {
-            text-align: center;
-            height: 100%;
-        }
-
-            #gist h2 {
-                font-family: 'Martel', Georgia, sans-serif;
-                color: #fefefe;
-                margin: .67em 0;
-                font-size: 22px;
-                line-height: 1.58;
-                font-weight: 300;
-            }
-
-            #gist #dr-jennifer-hoppe {
-                display: none;
-            }
-
-            #gist #a-prescription {
-                display: block;
-            }
-
-    @media screen and (min-width: 600px) {
-        .landing-page #gist-wrapper {
-            align-items: center;
-            padding: 0 10vw;
-        }
-
-            .landing-page #gist {
-                text-align: right;
-            }
-
-                #gist #a-prescription {
-                    display: inline;
-                }
-
-                #gist #dr-jennifer-hoppe {
-                    display: inline;
-                }
-
-                #gist #for-congress {
-                    display: none;
-                }
-
-                #gist #slogan {
-                    display: inline;
-                }
-    }
-
-    @media screen and (min-width: 900px) {
-        #gist h2 {
-            font-size: 30px;
-        }
+      height: 550px;
     }
 
     .pseudo-landing-page {
-        height: 100vh;
+      height: 550px;
     }
-
-    @media screen and (max-height: 550px) {
-        .landing-page {
-            height: 550px;
-        }
-
-        .pseudo-landing-page {
-            height: 550px;
-        }
-    }
+  }
 </style>
