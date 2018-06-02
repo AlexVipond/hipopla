@@ -42,11 +42,13 @@
     {% include emailCSS.html %}
     {% include headerCSS.html %}
     {% include landingPageCSS.html %}
+    {% include neonCSS.html %}
 
     <header class="landing-page">
       <style>
         #bg-img {
           background-image: url(/media/i-like-food.svg);
+          /* background-color: #121212; */
           background-repeat: repeat;
         }
       </style>
@@ -54,17 +56,17 @@
 
       <div id="gist-wrapper">
         <div id="gist">
-          <!-- <h1>bienvenidos a</h1> -->
+          <span class="bienvenidos">BIENVENIDOS A</span>
 
           <span class="hipopla-resto">
             <svg class="logo" baseProfile="full"
               viewBox="0 0 140 72 "
-              preserveAspectRatio="xMinYMin meet"
+              preserveAspectRatio="xMidYMin meet"
               xmlns="http://www.w3.org/2000/svg">
 
               <defs>
                 <style type="text/css">
-                  @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;text=HIPOLAREST');
+                  @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;text=HIPOLARESTBNVDS');
 
                   .hipopla,
                   .resto {
@@ -87,16 +89,16 @@
                 </style>
 
                 <filter id="neon">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="2.3" />
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="2.9" />
                 </filter>
               </defs>
 
               <g filter="url(#neon)">
-                <text class="hipopla" x="5" y="45">HIP</text>
-                <text class="hipopla" x="90" y="45">PLA</text>
-                <text class="resto" x="96.5" y="67">RESTO</text>
+                <text class="hipopla" x="5" y="45"><tspan class="flicker flicker6">H</tspan><tspan class="flicker flicker1">I</tspan>P</text>
+                <text class="hipopla" x="90" y="45"><tspan class="flicker flicker2">P</tspan>L<tspan class="flicker flicker5">A</tspan></text>
+                <text class="resto" x="96.5" y="67">RE<tspan class="flicker flicker3">ST</tspan>O</text>
 
-                <g transform="translate(45 5) scale(1.05)">
+                <g class="flicker flicker4 huevo" transform="translate(45 5) scale(1.05)">
                   <path fill="none" stroke="#f6a932" stroke-width="1.5" stroke-linecap="round"
                     d="M 22.5 5
                     q -15 -4.5 -14.5 6
@@ -124,12 +126,12 @@
               </g>
 
               <g>
-                <text class="hipopla" x="5" y="45">HIP</text>
-                <text class="hipopla" x="90" y="45">PLA</text>
-                <text class="resto" x="96.5" y="67">RESTO</text>
+                <text class="hipopla" x="5" y="45">H<tspan class="flicker flicker1">I</tspan>P</text>
+                <text class="hipopla" x="90" y="45"><tspan class="flicker flicker2">P</tspan>LA</text>
+                <text class="resto" x="96.5" y="67">RE<tspan class="flicker flicker3">ST</tspan>O</text>
               </g>
 
-              <g transform="translate(45 5) scale(1.05)">
+              <g class="flicker flicker4 huevo" transform="translate(45 5) scale(1.05)">
                 <path fill="none" stroke="#f6a932" stroke-width="1.5" stroke-linecap="round"
                   d="M 22.5 5
                   q -15 -4.5 -14.5 6
