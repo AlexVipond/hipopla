@@ -8,20 +8,27 @@
       height: 100%;
     }
 
-      #gist .hipopla-resto {
-        display: block;
-        text-align: center;
+      #gist {
+        height: 50%;
       }
 
-      #gist .bienvenidos {
-        display: block;
-        color: #e9e9e9;
-        font-family: 'Amatic SC';
-        font-size: 46px;
-        margin-bottom: 1em;
-        letter-spacing: 0.08em;
-        font-weight: 400;
-      }
+        #gist .bienvenidos-hipopla-resto {
+          display: block;
+          text-align: center;
+          transform: translateY(-50%);
+        }
+
+          #gist .bienvenidos {
+            display: inline;
+            color: #e9e9e9;
+            font-family: 'Amatic SC';
+            font-size: 46px;
+            letter-spacing: 0.08em;
+            font-weight: 400;
+          }
+
+          #gist .logo {
+          }
 
   @media screen and (min-width: 600px) {
     .landing-page #gist-wrapper {
@@ -34,7 +41,7 @@
       margin-bottom: .7em;
     }
 
-    #gist .hipopla-resto .logo {
+    #gist .logo {
       max-width: 565px;
     }
   }
@@ -47,13 +54,13 @@
     height: 100vh;
   }
 
-  @media screen and (max-height: 550px) {
+  @media screen and (max-height: 450px) {
     .landing-page {
-      height: 550px;
+      height: 450px;
     }
 
     .pseudo-landing-page {
-      height: 550px;
+      height: 450px;
     }
   }
 </style>
