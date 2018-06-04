@@ -15,4 +15,7 @@
 <url>
 <loc>http://localhost:4000/contact/thank-you.html</loc>
 </url>
+<url>
+<loc>http://localhost:4000/menu.html</loc>
+</url>
 </urlset>
