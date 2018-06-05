@@ -29,31 +29,17 @@
 }
 
     .fixed .open-menu a {
-        color: #fefefe;
+        color: #121212;
     }
 
     .fixed .mobile-donate {
-        color: #9a0007;
-        border-color: #9a0007;
-        background-color: #fefefe;
+        color: #121212;
+        border-color: #121212;
+        background-color: #e9e9e9;
     }
 
-    .fixed .menu-icon path {
-        stroke: #9a0007;
-        fill: #fefefe;
-    }
-
-    .fixed .menu-icon text {
-        fill: #9a0007;
-    }
-
-    .fixed .open-menu .menu-icon path {
-        stroke: #fefefe;
-        fill: #9a0007;
-    }
-
-    .fixed .open-menu text {
-        fill: #fefefe;
+    .fixed .menu-icon .menu-bar {
+      fill: #121212;
     }
 
     .fixed a:not(.donate) {
