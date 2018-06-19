@@ -181,10 +181,14 @@
     {% include indexCSS.html %}
 
     <main>
-      <article>
-        {{ content }}
-      </article>
+        <article>
+          <section class="blog-post">
+            {% capture my_include %}{% include menu.md %}{% endcapture %}
+            {{ my_include | markdownify }}
+          </section>
+        </article>
     </main>
+    <script src="/scripts/build-food-menu.js"></script>
 
     {% include footer.html %}
   </body>
