@@ -451,8 +451,8 @@
   <div class="menu-wrapper">
     <ul class="menu">
       <li><a href="/">Inicio</a></li>
-      <li><a href="/menu/">Menú</a></li>
-      <li><a href="/nosotros/">Nosotros</a></li>
+      <li><a onclick="smoothScroll('#nosotros-anchor')">Nosotros</a></li>
+      <li><a onclick="smoothScroll('#menu-anchor')">Menú</a></li>
       <!-- <li><a href="/blog/">Blog</a></li> -->
       <!-- <li><a href="/contacto/">Contacto</a></li> -->
       <li>
@@ -1144,7 +1144,40 @@
 
     <main>
         <article>
-          <section class="blog-post">
+          <section id="nosotros-anchor" class="nosotros-container">
+            
+            <h1 id="preparando-los-platillos-más-deliciosos">Preparando los platillos más deliciosos!</h1>
+
+<p>Tenemos el espacio para aquellas mentes creativas, ideas vivas y también las buenas vibras. Ofrecemos:</p>
+
+<ul>
+  <li>Envío a domicilio</li>
+  <li>Medio ambiente ideal para niños</li>
+  <li>Terraza o mesas al aire libre</li>
+  <li>Comida para llevar</li>
+  <li>Servicio de mesero</li>
+</ul>
+
+<p>Para llevar, puedes realizar tus órdenes al +504 2515-1466.</p>
+
+<p>En la Col. Los Alamos, segunda etapa, frente a bulevar bio-saludable, ¡TE ESPERAMOS!</p>
+
+<h2 id="horas">Horas:</h2>
+<p>Lunes CERRADO
+Martes 4:00pm - 10:00pm
+Miercoles 4:00pm - 10:00pm
+Jueves 4:00pm - 10:00pm
+Viernes 4:00pm - 11:00pm
+Sábado 4:00pm - 11:00pm
+Domingo 4:00pm - 10:00pm</p>
+
+<p>Ven y disfruta de nuestro único y delicioso menú, sólo en Hipopla Resto:</p>
+
+          </section>
+
+
+          <section id="menu-anchor" class="blog-post menu-container">
+            <span class="menu-title">Menú</span>
             
             <h1 id="ensaladas">Ensaladas</h1>
 
@@ -1277,9 +1310,12 @@
 <p>Horchata: L. 20.00</p>
 
           </section>
+          <script src="/scripts/build-food-menu.js"></script>
+
         </article>
     </main>
-    <script src="/scripts/build-food-menu.js"></script>
+
+    <script src="scripts/smooth-scroll.js" defer></script>
 
     <script src="/scripts/transition-nav.js" defer></script>
 
@@ -1347,11 +1383,12 @@
 
     <div class="menu-wrapper">
         <ul class="menu">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/menu/">Menú</a></li>
-            <li><a href="/nosotros/">Nosotros</a></li>
-            <!-- <li><a href="/blog/">Blog</a></li>
-            <li><a href="/contacto/">Contacto</a></li> -->
+          <li>NAVIGACIÓN</li>
+          <li><a href="/">Inicio</a></li>
+          <li><a onclick="smoothScroll('#nosotros-anchor')">Nosotros</a></li>
+          <li><a onclick="smoothScroll('#menu-anchor')">Menú</a></li>
+          <!-- <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contacto/">Contacto</a></li> -->
         </ul>
     </div>
 

@@ -182,13 +182,23 @@
 
     <main>
         <article>
-          <section class="blog-post">
-            {% capture my_include %}{% include menu.md %}{% endcapture %}
-            {{ my_include | markdownify }}
+          <section id="nosotros-anchor" class="nosotros-container">
+            {% capture nosotros %}{% include hipopla/nosotros.md %}{% endcapture %}
+            {{ nosotros | markdownify }}
           </section>
+          <script src="/scripts/build-nosotros.js"></script>
+
+          <section id="menu-anchor" class="blog-post menu-container">
+            <span class="menu-title">Menú</span>
+            {% capture menu %}{% include hipopla/menu.md %}{% endcapture %}
+            {{ menu | markdownify }}
+          </section>
+          <script src="/scripts/build-food-menu.js"></script>
+
         </article>
     </main>
-    <script src="/scripts/build-food-menu.js"></script>
+
+    <script src="scripts/smooth-scroll.js" defer></script>
 
     {% include footer.html %}
   </body>

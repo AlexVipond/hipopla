@@ -19,4 +19,4 @@ function getGoogleCalendarEvents(calendarID, publicAPIKey) {
   console.log(events);
 }
 
-getGoogleCalendarEvents('upeb3otrsqimlpi0p3if0eieg0@group.calendar.google.com', 'AIzaSyD-uOo46xv8P3ebLK1elUUixEREcG03Lew');
+getGoogleCalendarEvents(,);
