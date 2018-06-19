@@ -11,7 +11,6 @@ prose:
     - index.html
     - _config.yml
     - /_layouts
-    - /_includes
     - /css
     - /scripts
     - .gitignore
@@ -21,10 +20,6 @@ prose:
     - README.md
   metadata:
     _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "blog"
       - name: "title"
         field:
           element: "text"
