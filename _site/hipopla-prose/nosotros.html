@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script>
-      document.addEventListener('DOMContentLoaded', function(){});
-    </script>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){});
+        </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58906424-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58906424-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-      gtag('config', 'UA-58906424-3');
-    </script> -->
-    <!-- End Google Analytics -->
+            gtag('config', 'UA-58906424-3');
+        </script>
+        <!-- End Google Analytics -->
 
-    <title>Hipopla Resto</title>
+        <title>Preparando los platillos más deliciosos!</title>
 
-    <meta charset="utf-8">
-    <meta name="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="imapge/png" href="/media/favicon.png">
+        <link rel="icon" type="imapge/png" href="/media/favicon.png">
 
-    <noscript>
-      <link rel="stylesheet" href="/css/normalize.css">
-      <link rel="stylesheet" href="/css/deferred.css">
-      <link rel="stylesheet" href="/css/600.css" media="(min-width: 600px)">
-      <link rel="stylesheet" href="/css/900.css" media="(min-width: 900px)">
-    </noscript>
+        <noscript>
+          <link rel="stylesheet" href="/css/normalize.css">
+          <link rel="stylesheet" href="/css/deferred.css">
+          <link rel="stylesheet" href="/css/600.css" media="(min-width: 600px)">
+          <link rel="stylesheet" href="/css/900.css" media="(min-width: 900px)">
+        </noscript>
 
-    <meta name="description" content="Preparando los platillos más deliciosos!">
-    <meta name="keywords" content="hipopla, resto, San Pedro Sula, Honduras, restaurante, Colónia Los Alamos, cena, bebidas">
-    <meta name="author" content="Alex Vipond">
-  </head>
+        <meta name="description" content="Preparando los platillos más deliciosos!">
+        <meta name="keywords" content="hipopla, resto, San Pedro Sula, Honduras, restaurante, Colónia Los Alamos, cena, bebidas">
+        <meta name="author" content="Alex Vipond">
 
-  <body>
-    <style media="screen">
+    <body>
+        <style media="screen">
     * {margin: 0; padding: 0;}
 
     html,body {
@@ -394,7 +393,7 @@
     }
 </style>
 
-    <nav class="nav">
+        <nav class="nav">
   <div class="logo-wrapper">
     <svg class="logo" alt="Hipopla logo" onclick="location.href = '/';" version="1.1"
       baseProfile="full"
@@ -486,7 +485,198 @@
   <script src="/scripts/open-menu.js" defer></script>
 </nav>
 
-    <style>
+        <style>
+    header {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 33vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .bg-img {
+        background-size: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-img-center-top {
+        background-position: center top;
+    }
+
+    .bg-img-left-top {
+        background-position: left top;
+    }
+
+    header #gist-wrapper {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        box-sizing: border-box;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0 5vw;
+        margin: 0;
+    }
+
+        header #gist-wrapper #gist {
+            width: 100%;
+        }
+
+            #gist h1 {
+                font-family: 'Amatic SC', Helvetica, Arial, sans-serif;
+                color: #fefefe;
+                font-size: 40px;
+                line-height: 1.58;
+                font-weight: 400;
+                margin: .4em 0;
+            }
+
+            #gist h1, #gist h2 {
+                text-shadow: 0px 1px 4px rgba(18,18,18,0.5);
+            }
+
+    @media screen and (min-width: 600px) {
+        #gist h1 {
+            font-weight: 300;
+            font-size: 36px;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        header #gist-wrapper {
+            padding: 0 10vw;
+        }
+
+            #gist h1 {
+                font-size: 54px;
+            }
+    }
+
+    .pseudo-header {
+        height: 33vh;
+    }
+</style>
+
+
+        <header>
+            <div class="bg-img bg-img-center-top" style="background-image: url(/images/blog-media/capitol.jpg); opacity: .35;">
+            </div>
+
+            <div id="gist-wrapper">
+                <div id="gist">
+                    <h1>Preparando los platillos más deliciosos!</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="pseudo-header"></div>
+
+        <style>
+    main .blog-post {
+        padding: 29px 5vw;
+    }
+
+        main .blog-post > p:first-of-type {
+            margin-top: 2em;
+        }
+
+        main .blog-post .post-summary {
+            border-top: 2px solid #9a0007;
+            padding-top: 2.4em;
+        }
+
+        main .blog-post .post-summary h2, main .blog-post .post-summary h3 {
+            text-align: left;
+        }
+
+        main .blog-post .post-summary h2 a {
+            color: #121212;
+        }
+
+        /* Second child because the first child is an empty h2 */
+        main .blog-post .post-summary:nth-child(2) {
+            border: none;
+        }
+
+        main .blog-post img {
+            width: 100%;
+        }
+
+    @media screen and (min-width: 600px) {
+        main .blog-post {
+            padding: 1.6em 10vw;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        main {
+            padding: 4.8em 0 1.6em 0;
+        }
+
+        main .blog-post {
+            padding: 1.6em calc((100vw - 700px) / 2);
+        }
+
+            main .blog-post img {
+                width: 700px;
+            }
+
+            main .blog-post h2, main .blog-post h3 {
+                text-align: center;
+            }
+    }
+</style>
+
+
+        <main>
+            <article>
+              <section class="blog-post">
+                  <h1 id="preparando-los-platillos-más-deliciosos">Preparando los platillos más deliciosos!</h1>
+
+<p>Tenemos el espacio para aquellas mentes creativas, ideas vivas y también las buenas vibras. Ofrecemos:</p>
+
+<ul>
+  <li>Envío a domicilio</li>
+  <li>Medio ambiente ideal para niños</li>
+  <li>Terraza o mesas al aire libre</li>
+  <li>Comida para llevar</li>
+  <li>Servicio de mesero</li>
+</ul>
+
+<p>Para llevar, puedes realizar tus órdenes al +504 2515-1466.</p>
+
+<p>En la Col. Los Alamos, segunda etapa, frente a bulevar bio-saludable, ¡TE ESPERAMOS!</p>
+
+<h2 id="horas">Horas:</h2>
+
+<ul>
+  <li>Lunes CERRADO</li>
+  <li>Martes 4:00pm - 10:00pm</li>
+  <li>Miercoles 4:00pm - 10:00pm</li>
+  <li>Jueves 4:00pm - 10:00pm</li>
+  <li>Viernes 4:00pm - 11:00pm</li>
+  <li>Sábado 4:00pm - 11:00pm</li>
+  <li>Domingo 4:00pm - 10:00pm</li>
+</ul>
+
+<p>Ven y disfruta de nuestro único y delicioso menú, sólo en Hipopla Resto:</p>
+
+              </section>
+            </article>
+        </main>
+        <script src="/scripts/build-food-menu.js"></script>
+
+        <style>
     form * {
         box-sizing: border-box;
     }
@@ -623,704 +813,7 @@
     }
 </style>
 
-    <style>
-    header {
-        position: absolute;
-        z-index: 0;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 33vh;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
-
-    .bg-img {
-        background-size: auto;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .bg-img-center-top {
-        background-position: center top;
-    }
-
-    .bg-img-left-top {
-        background-position: left top;
-    }
-
-    header #gist-wrapper {
-        position: relative;
-        z-index: 1;
-        height: 100%;
-        box-sizing: border-box;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        padding: 0 5vw;
-        margin: 0;
-    }
-
-        header #gist-wrapper #gist {
-            width: 100%;
-        }
-
-            #gist h1 {
-                font-family: 'Amatic SC', Helvetica, Arial, sans-serif;
-                color: #fefefe;
-                font-size: 40px;
-                line-height: 1.58;
-                font-weight: 400;
-                margin: .4em 0;
-            }
-
-            #gist h1, #gist h2 {
-                text-shadow: 0px 1px 4px rgba(18,18,18,0.5);
-            }
-
-    @media screen and (min-width: 600px) {
-        #gist h1 {
-            font-weight: 300;
-            font-size: 36px;
-        }
-    }
-
-    @media screen and (min-width: 900px) {
-        header #gist-wrapper {
-            padding: 0 10vw;
-        }
-
-            #gist h1 {
-                font-size: 54px;
-            }
-    }
-
-    .pseudo-header {
-        height: 33vh;
-    }
-</style>
-
-    <style>
-  .landing-page {
-    height: 100vh;
-  }
-
-    .landing-page #gist-wrapper {
-      text-align: center;
-      height: 100%;
-    }
-
-      #gist {
-        height: 50%;
-      }
-
-        #gist .bienvenidos-hipopla-resto {
-          display: block;
-          text-align: center;
-          transform: translateY(-50%);
-        }
-
-          #gist .bienvenidos {
-            display: inline;
-            color: #e9e9e9;
-            font-family: 'Amatic SC';
-            font-size: 46px;
-            letter-spacing: 0.08em;
-            font-weight: 400;
-          }
-
-          #gist .logo {
-          }
-
-  @media screen and (min-width: 600px) {
-    .landing-page #gist-wrapper {
-      padding: 0 10vw;
-    }
-
-    #gist .bienvenidos {
-      font-size: 53px;
-      letter-spacing: .1em;
-      margin-bottom: .7em;
-    }
-
-    #gist .logo {
-      max-width: 595px;
-    }
-  }
-
-  @media screen and (min-width: 900px) {
-
-  }
-
-  .pseudo-landing-page {
-    height: 100vh;
-  }
-
-  @media screen and (max-height: 450px) {
-    .landing-page {
-      height: 450px;
-    }
-
-    .pseudo-landing-page {
-      height: 450px;
-    }
-  }
-</style>
-
-    <style>
-#gist .logo .flicker {
-  animation: flicker 7s linear infinite;
-}
-
-#gist .logo .flicker1 {
-  animation-delay: 0s;
-}
-
-#gist .logo .flicker2 {
-  animation-delay: 2s;
-}
-
-#gist .logo .flicker3 {
-  animation-delay: 2.5s;
-}
-
-#gist .logo .flicker4 {
-  animation-delay: 4s;
-}
-
-#gist .logo .flicker5 {
-  animation-delay: 2.75s;
-}
-
-#gist .logo .flicker6 {
-  animation-delay: 1s;
-}
-
-@keyframes flicker {
-  from {
-    opacity: 1;
-  }
-
-  4% {
-    opacity: .9;
-  }
-
-  6% {
-    opacity: .82;
-  }
-
-  8% {
-    opacity: .90;
-  }
-
-  10% {
-    opacity: .82;
-  }
-
-  11% {
-    opacity: .922;
-  }
-
-  12% {
-    opacity: .87;
-  }
-
-  14% {
-    opacity: .95;
-  }
-
-  16% {
-    opacity: .98;
-  }
-
-  17% {
-    opacity: .9;
-  }
-
-  19% {
-    opacity: .93;
-  }
-
-  20% {
-    opacity: .99;
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  26% {
-    opacity: .91;
-  }
-
-  28% {
-    opacity: .98;
-  }
-
-  37% {
-    opacity: .88;
-  }
-
-  38% {
-    opacity: .2;
-  }
-
-  39% {
-    opacity: .90;
-  }
-
-  42% {
-    opacity: 1;
-  }
-
-  44% {
-    opacity: .97;
-  }
-
-  46% {
-    opacity: .94;
-  }
-
-  56% {
-    opacity: .85;
-  }
-
-  58% {
-    opacity: .82;
-  }
-
-  60% {
-    opacity: .99;
-  }
-
-  68% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: .9;
-  }
-
-  72% {
-    opacity: .95;
-  }
-
-  93% {
-    opacity: .93;
-  }
-
-  95% {
-    opacity: .95;
-  }
-
-  97% {
-    opacity: .93;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-</style>
-
-
-    <header class="landing-page">
-      <style>
-        #bg-img {
-          background-image: url(/media/i-like-food.svg);
-          /* background-color: #121212; */
-          background-repeat: repeat;
-        }
-      </style>
-      <div id="bg-img" class="bg-img"></div>
-
-      <div id="gist-wrapper">
-        <div id="gist">
-          <div class="bienvenidos-hipopla-resto">
-            <span class="bienvenidos">Bienvenidos a</span><br>
-            <svg class="logo" baseProfile="full"
-              viewBox="0 0 145 74"
-              preserveAspectRatio="xMidYMin meet"
-              xmlns="http://www.w3.org/2000/svg">
-
-              <defs>
-                <style type="text/css">
-                  @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;text=HipolaRestBnvds');
-
-                  .hipopla,
-                  .resto {
-                    font-family: 'Amatic SC';
-                  }
-
-                  .hipopla {
-                    font-size: 50px;
-                    fill: #62e6f3;
-                    letter-spacing: .08em;
-                  }
-
-                  .resto {
-                    font-size: 24px;
-                  }
-
-                  .yolk,
-                  .resto {
-                    fill: #f6a932;
-                  }
-                </style>
-
-                <filter id="neon">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="2.9" />
-                </filter>
-              </defs>
-
-              <g filter="url(#neon)">
-                <text class="hipopla" x="5" y="45"><tspan class="flicker flicker6">H</tspan><tspan class="flicker flicker1">i</tspan>p</text>
-                <text class="hipopla" x="91" y="45"><tspan class="flicker flicker2">p</tspan>l<tspan class="flicker flicker5">a</tspan></text>
-                <text class="resto" x="104" y="68">Re<tspan class="flicker flicker3">st</tspan>o</text>
-
-                <g class="flicker flicker4 huevo" transform="translate(53.5 13) scale(.85)">
-                  <path fill="none" stroke="#f6a932" stroke-width="1.5" stroke-linecap="round"
-                    d="M 22.5 5
-                    q -15 -4.5 -14.5 6
-                    q 0 3 -2 6
-                    q -4 6.5 1 14
-                    q 1 1.5 2 2
-                    q 3.5 1.5 6 3
-                    q 6 4 16 1
-                    q 17 -6 2 -25
-                    q -1.75 -2 -2.5 -4
-                    q -1 -2.5 -5 -2.5
-                    q -2 -.2 -2.75 -.4
-                    "/>
-
-                  <path class="yolk" stroke-width="0" stroke-linecap="round" fill-rule="evenodd"
-                    d="M 19 10.5
-                    a 6.75 6.75 0 1 1 -.001 0
-                    m 0.2 1.25
-                    a 5.5 5.5 0 0 0 -5.168 3.619
-                    a 1.8 1.8 0 1 0 3.491 0.616
-                    q .2 -2.5 2.8 -2.2
-                    a .95 .95 0 0 0 .001 -1.9
-                    "/>
-                </g>
-              </g>
-
-              <g>
-                <text class="hipopla" x="5" y="45"><tspan class="flicker flicker6">H</tspan><tspan class="flicker flicker1">i</tspan>p</text>
-                <text class="hipopla" x="91" y="45"><tspan class="flicker flicker2">p</tspan>l<tspan class="flicker flicker5">a</tspan></text>
-                <text class="resto" x="104" y="68">Re<tspan class="flicker flicker3">st</tspan>o</text>
-              </g>
-
-              <g class="flicker flicker4 huevo" transform="translate(53.5 13) scale(.85)">
-                <path fill="none" stroke="#f6a932" stroke-width="1.5" stroke-linecap="round"
-                  d="M 22.5 5
-                  q -15 -4.5 -14.5 6
-                  q 0 3 -2 6
-                  q -4 6.5 1 14
-                  q 1 1.5 2 2
-                  q 3.5 1.5 6 3
-                  q 6 4 16 1
-                  q 17 -6 2 -25
-                  q -1.75 -2 -2.5 -4
-                  q -1 -2.5 -5 -2.5
-                  q -2 -.2 -2.75 -.4
-                  "/>
-
-                <path class="yolk" stroke-width="0" stroke-linecap="round" fill-rule="evenodd"
-                  d="M 19 10.5
-                  a 6.75 6.75 0 1 1 -.001 0
-                  m 0.2 1.25
-                  a 5.5 5.5 0 0 0 -5.168 3.619
-                  a 1.8 1.8 0 1 0 3.491 0.616
-                  q .2 -2.5 2.8 -2.2
-                  a .95 .95 0 0 0 .001 -1.9
-                  "/>
-              </g>
-            </svg>
-          </div>
-
-
-          <!-- <form action="https://getsimpleform.com/messages?form_api_token=c826bf93cc0f701979110234068b770a" method="post">
-            <input type='hidden' name='redirect_to' value='https://hipopla.com/email/gracias.html' />
-            <input type="tel" name="unsubscribe_me" value="" tabindex="-1" autocomplete="off" />
-            <input type="text" name="first-name" value="" placeholder="First name" autocapitalize="words" aria-label="first name" />
-            <input type="text" name="last-name" value="" placeholder="Last name" autocapitalize="words" aria-label="last name" />
-            <div class="email-wrapper">
-              <input type="email" name="email" value="" placeholder="Email" aria-label="email" required />
-            </div><br>
-            <button class="button" type="submit" name="submit-email">Subscribe to newsletter</button>
-          </form> -->
-        </div>
-      </div>
-
-    </header>
-
-    <div class="pseudo-landing-page"></div>
-
-    <style>
-    main .blog-post {
-        padding: 29px 5vw;
-    }
-
-        main .blog-post > p:first-of-type {
-            margin-top: 2em;
-        }
-
-        main .blog-post .post-summary {
-            border-top: 2px solid #9a0007;
-            padding-top: 2.4em;
-        }
-
-        main .blog-post .post-summary h2, main .blog-post .post-summary h3 {
-            text-align: left;
-        }
-
-        main .blog-post .post-summary h2 a {
-            color: #121212;
-        }
-
-        /* Second child because the first child is an empty h2 */
-        main .blog-post .post-summary:nth-child(2) {
-            border: none;
-        }
-
-        main .blog-post img {
-            width: 100%;
-        }
-
-    @media screen and (min-width: 600px) {
-        main .blog-post {
-            padding: 1.6em 10vw;
-        }
-    }
-
-    @media screen and (min-width: 900px) {
-        main {
-            padding: 4.8em 0 1.6em 0;
-        }
-
-        main .blog-post {
-            padding: 1.6em calc((100vw - 700px) / 2);
-        }
-
-            main .blog-post img {
-                width: 700px;
-            }
-
-            main .blog-post h2, main .blog-post h3 {
-                text-align: center;
-            }
-    }
-</style>
-
-    <style>
-    main section:first-child {
-        padding-top: 82px;
-    }
-
-    @media screen and (min-width: 600px) {
-        main .flex:first-child {
-            padding-top: 4em;
-        }
-    }
-
-    @media screen and (min-width: 900px) {
-        main {
-            padding-top: 0;
-        }
-
-        main section:first-child {
-            padding-top: 4.8em;
-            padding-bottom: 4.8em;
-        }
-    }
-</style>
-
-
-    <main>
-        <article>
-          <section id="nosotros-anchor" class="nosotros-container">
-            
-            <h1 id="preparando-los-platillos-más-deliciosos">Preparando los platillos más deliciosos!</h1>
-
-<p>Tenemos el espacio para aquellas mentes creativas, ideas vivas y también las buenas vibras. Ofrecemos:</p>
-
-<ul>
-  <li>Envío a domicilio</li>
-  <li>Medio ambiente ideal para niños</li>
-  <li>Terraza o mesas al aire libre</li>
-  <li>Comida para llevar</li>
-  <li>Servicio de mesero</li>
-</ul>
-
-<p>Para llevar, puedes realizar tus órdenes al +504 2515-1466.</p>
-
-<p>En la Col. Los Alamos, segunda etapa, frente a bulevar bio-saludable, ¡TE ESPERAMOS!</p>
-
-<h2 id="horas">Horas:</h2>
-
-<ul>
-  <li>Lunes CERRADO</li>
-  <li>Martes 4:00pm - 10:00pm</li>
-  <li>Miercoles 4:00pm - 10:00pm</li>
-  <li>Jueves 4:00pm - 10:00pm</li>
-  <li>Viernes 4:00pm - 11:00pm</li>
-  <li>Sábado 4:00pm - 11:00pm</li>
-  <li>Domingo 4:00pm - 10:00pm</li>
-</ul>
-
-<p>Ven y disfruta de nuestro único y delicioso menú, sólo en Hipopla Resto:</p>
-
-          </section>
-          <script src="/scripts/build-nosotros.js"></script>
-
-          <section id="menu-anchor" class="blog-post menu-container">
-            <span class="menu-title">Menú</span>
-            
-            <h1 id="ensaladas">Ensaladas</h1>
-
-<h2 id="hawaii">Hawaii</h2>
-<p>Aguacate, piña, tomate, cebolla.</p>
-
-<p>Servida con una vinagreta de limón.</p>
-
-<p>L. 126.00</p>
-
-<h2 id="popla">Popla</h2>
-<p>Pollo, tomate, pepino, cebolla.</p>
-
-<p>Servida con una vinagreta de cilantro.</p>
-
-<p>L. 138.00</p>
-
-<h1 id="fingers--wings">Fingers &amp; Wings</h1>
-
-<h2 id="alitas">Alitas</h2>
-<p>Servidas con:</p>
-
-<p>Aderezo blue cheese y papas fritas,</p>
-
-<p>Bañadas en la salsa de tu preferencia:</p>
-
-<p>Honey Mustard, Buffalo, Barbacoa.</p>
-
-<p>6 pzs: L. 120.00</p>
-
-<p>8 pzs: L. 135.00</p>
-
-<h2 id="chicken-fingers">Chicken Fingers</h2>
-<p>Servidos con:</p>
-
-<p>Papas fritas y salsa de tu preferencia:</p>
-
-<p>Honey Mustard, Buffalo, Barbacoa.</p>
-
-<p>4 pzs: L. 120.00</p>
-
-<p>6 pzs: L. 135.00</p>
-
-<h1 id="sandwiches">Sandwiches</h1>
-
-<h2 id="madame-popla">Madame Popla</h2>
-<p>Jamon ahumado, huevo estrellado,</p>
-
-<p>queso provolone y queso mozarella.</p>
-
-<p>L 75.00</p>
-
-<h2 id="monsieur-popla">Monsieur Popla</h2>
-<p>Jugosas tiras de pollo a la plancha, aguacate,</p>
-
-<p>queso cheddar, jalapeños.</p>
-
-<p>Bañado con mayo dressing de la casa.</p>
-
-<p>Acompañado con papas fritas.</p>
-
-<p>L. 139.00</p>
-
-<h1 id="shawarma">Shawarma</h1>
-<p>En pan pita, deliciosas tiras de pollo, lechuga, tomate, y cebolla.</p>
-
-<p>Bañado con salsa tzatziki.</p>
-
-<p>L. 85.00</p>
-
-<h1 id="panini">Panini</h1>
-
-<h2 id="panino-azul">Panino Azul</h2>
-<p>Sauté de champiñones con cebolla,</p>
-
-<p>queso blue cheese y tocino,</p>
-
-<p>Acompañado con papas fritas.</p>
-
-<p>L. 143.00</p>
-
-<h2 id="panino-frijolero">Panino Frijolero</h2>
-<p>Frijoles fritos de la abuela y queso.</p>
-
-<p>L. 45.00</p>
-
-<p>Con huevo estrellado: L. 50.00</p>
-
-<h1 id="papas">Papas</h1>
-
-<h2 id="popla-1">Popla</h2>
-<p>Deliciosas papas fritas sazonadas,</p>
-
-<p>cubiertas con una cremosa salsa de queso cheddar,</p>
-
-<p>jalapeño, bacon bites, y chimichurri.</p>
-
-<p>L. 115.00</p>
-
-<h2 id="orden-de-papas">Orden de Papas</h2>
-<p>L. 36.00</p>
-
-<h1 id="asados">Asados</h1>
-<p>(Jueves - Domingo)</p>
-
-<p>Todos los asados vienen con: Frijoles fritos, queso, chimichurri, encurtido, y tajadas o tostones o papas fritas.</p>
-
-<h2 id="lomo-de-res">Lomo de Res</h2>
-<p>L. 160.00</p>
-
-<h2 id="lomo-de-res--chorizo">Lomo de Res &amp; Chorizo</h2>
-<p>L. 180.00</p>
-
-<h2 id="lomo-de-res--costilla">Lomo de Res &amp; Costilla</h2>
-<p>L. 240.00</p>
-
-<h2 id="lomo-de-res-costilla--chorizo">Lomo de Res, Costilla, &amp; Chorizo</h2>
-<p>L. 265.00</p>
-
-<h2 id="orden-de-chorizo">Orden de Chorizo</h2>
-<p>L. 120.00</p>
-
-<h1 id="bebidas">Bebidas</h1>
-<p>Refrescos desechables: L. 25.00</p>
-
-<p>Té frío: L. 30.00</p>
-
-<p>Bote con agua: L. 20.00</p>
-
-<p>Horchata: L. 20.00</p>
-
-          </section>
-          <script src="/scripts/build-food-menu.js"></script>
-
-        </article>
-    </main>
-
-    <script src="scripts/smooth-scroll.js" defer></script>
-
-    <script src="/scripts/transition-nav.js" defer></script>
+        <script src="/scripts/transition-nav.js" defer></script>
 
 <footer>
     <div class="logo-wrapper">
@@ -1427,5 +920,5 @@
     </script>
 </footer>
 
-  </body>
+    </body>
 </html>

@@ -3,7 +3,7 @@ plugins:
     - jekyll-sitemap
 markdown: kramdown
 prose:
-  rooturl: '_includes/hipopla'
+  rooturl: 'hipopla-prose'
   siteurl: 'https://hipopla.com'
   relativeLinks: 'https://hipopla.com/prose-links.jsonp'
   media: 'media/blog'
@@ -11,6 +11,7 @@ prose:
     - index.html
     - _config.yml
     - /_layouts
+    - /_includes
     - /css
     - /scripts
     - .gitignore
