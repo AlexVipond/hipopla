@@ -46,11 +46,11 @@
 
     <header class="landing-page">
       <style>
-        #bg-img {
+        /* body {
           background-image: url(/media/i-like-food.svg);
-          /* background-color: #121212; */
-          background-repeat: repeat;
-        }
+           background-color: #121212;
+           background-repeat: repeat;
+        } */
       </style>
       <div id="bg-img" class="bg-img"></div>
 
@@ -160,20 +160,27 @@
           </div>
 
 
-          <!-- <form action="https://getsimpleform.com/messages?form_api_token=c826bf93cc0f701979110234068b770a" method="post">
-            <input type='hidden' name='redirect_to' value='https://hipopla.com/email/gracias.html' />
-            <input type="tel" name="unsubscribe_me" value="" tabindex="-1" autocomplete="off" />
-            <input type="text" name="first-name" value="" placeholder="First name" autocapitalize="words" aria-label="first name" />
-            <input type="text" name="last-name" value="" placeholder="Last name" autocapitalize="words" aria-label="last name" />
-            <div class="email-wrapper">
-              <input type="email" name="email" value="" placeholder="Email" aria-label="email" required />
-            </div><br>
-            <button class="button" type="submit" name="submit-email">Subscribe to newsletter</button>
-          </form> -->
+          <div class="scroll-down-wrapper">
+            <a onclick="scrollPastLandingPage()"><svg class="scroll-down"
+              baseProfile="tiny"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMinYMin meet">
+
+              <path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/>
+              <path class="heroicon-ui"
+                d="M12 22
+                a10 10 0 1 1 0-20 10 10 0 0 1 0 20z
+                m0-2
+                a8 8 0 1 0 0-16 8 8 0 0 0 0 16z
+                "/>
+            </svg></a>
+          </div>
         </div>
       </div>
 
     </header>
+
+    <script src="/scripts/scroll-past-landing-page.js"></script>
 
     <div class="pseudo-landing-page"></div>
 

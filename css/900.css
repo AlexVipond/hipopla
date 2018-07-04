@@ -59,22 +59,3 @@
 
 
 /* Footer positions */
-
-footer form input {
-    border-radius: 4px 0 0 4px;
-    font-size: 16px !important;
-}
-
-footer form .button {
-    border-radius: 0 4px 4px 0;
-    border-left: none;
-    margin-top: 0;
-    font-size: 16px;
-    padding-top: 3.5px;
-    padding-bottom: 3.5px;
-}
-
-footer form .button:hover {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-}

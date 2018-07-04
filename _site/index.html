@@ -51,6 +51,12 @@
       letter-spacing: .013rem;
     }
 
+    body {
+      background-image: url(/media/i-like-food.svg);
+      /* background-color: #121212; */
+      background-repeat: repeat;
+    }
+
     a {
       text-decoration: none;
       -webkit-transition: all .2s ease;
@@ -228,7 +234,7 @@
         nav .open-menu .menu {
           -webkit-transform: translateX(0) scaleX(1);
           transform: translateX(0) scaleX(1);
-          box-shadow: 0 0 100vw 20vw #121212;
+          box-shadow: 0 0 50px #121212;
         }
 
     /* @media screen and (min-width: 600px) {
@@ -394,7 +400,7 @@
     }
 </style>
 
-    <nav class="nav">
+    <nav class="nav fixed">
   <div class="logo-wrapper">
     <svg class="logo" alt="Hipopla logo" onclick="location.href = '/';" version="1.1"
       baseProfile="full"
@@ -683,10 +689,30 @@
                 text-shadow: 0px 1px 4px rgba(18,18,18,0.5);
             }
 
+    header .scroll-down-wrapper {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+    }
+
+      header .scroll-down-wrapper .scroll-down {
+        height: 40px;
+      }
+
+        header .scroll-down-wrapper .scroll-down path {
+          fill: #f6a932;
+        }
+
     @media screen and (min-width: 600px) {
         #gist h1 {
             font-weight: 300;
             font-size: 36px;
+        }
+
+        header .scroll-down-wrapper {
+          bottom: 20px;
         }
     }
 
@@ -931,11 +957,11 @@
 
     <header class="landing-page">
       <style>
-        #bg-img {
+        /* body {
           background-image: url(/media/i-like-food.svg);
-          /* background-color: #121212; */
-          background-repeat: repeat;
-        }
+           background-color: #121212;
+           background-repeat: repeat;
+        } */
       </style>
       <div id="bg-img" class="bg-img"></div>
 
@@ -1045,20 +1071,27 @@
           </div>
 
 
-          <!-- <form action="https://getsimpleform.com/messages?form_api_token=c826bf93cc0f701979110234068b770a" method="post">
-            <input type='hidden' name='redirect_to' value='https://hipopla.com/email/gracias.html' />
-            <input type="tel" name="unsubscribe_me" value="" tabindex="-1" autocomplete="off" />
-            <input type="text" name="first-name" value="" placeholder="First name" autocapitalize="words" aria-label="first name" />
-            <input type="text" name="last-name" value="" placeholder="Last name" autocapitalize="words" aria-label="last name" />
-            <div class="email-wrapper">
-              <input type="email" name="email" value="" placeholder="Email" aria-label="email" required />
-            </div><br>
-            <button class="button" type="submit" name="submit-email">Subscribe to newsletter</button>
-          </form> -->
+          <div class="scroll-down-wrapper">
+            <a onclick="scrollPastLandingPage()"><svg class="scroll-down"
+              baseProfile="tiny"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMinYMin meet">
+
+              <path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/>
+              <path class="heroicon-ui"
+                d="M12 22
+                a10 10 0 1 1 0-20 10 10 0 0 1 0 20z
+                m0-2
+                a8 8 0 1 0 0-16 8 8 0 0 0 0 16z
+                "/>
+            </svg></a>
+          </div>
         </div>
       </div>
 
     </header>
+
+    <script src="/scripts/scroll-past-landing-page.js"></script>
 
     <div class="pseudo-landing-page"></div>
 
@@ -1320,43 +1353,60 @@
 
     <script src="scripts/smooth-scroll.js" defer></script>
 
-    <script src="/scripts/transition-nav.js" defer></script>
+    <!-- <script src="/scripts/transition-nav.js" defer></script> -->
 
 <footer>
+  <div class="half">
+    <div class="menu-wrapper">
+        <ul class="menu">
+          <li>NAVEGACIÓN</li>
+          <li><a href="/">Inicio</a></li>
+          <li><a onclick="smoothScroll('#nosotros-anchor')">Nosotros</a></li>
+          <li><a onclick="smoothScroll('#menu-anchor')">Menú</a></li>
+          <!-- <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contacto/">Contacto</a></li> -->
+        </ul>
+    </div>
+  </div>
+
+  <div class="half">
     <div class="logo-wrapper">
       <svg class="logo"
         alt="Hipopla logo"
         onclick="location.href = 'index.html';"
         baseProfile="full"
-        viewbox="0 0 160 90 "
-        preserveAspectRatio="xMinYMin meet"
+        viewBox="0 0 145 74"
+        preserveAspectRatio="xMidYMin meet"
         xmlns="http://www.w3.org/2000/svg">
 
         <defs>
           <style type="text/css">
-            .hipopla {
+            @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;text=HipolaRest');
+
+            .hipopla,
+            .resto {
               font-family: 'Amatic SC';
-              font-weight: 700;
-              font-size: 50px;
-              fill: #62e6f3;
             }
 
-            .yolk {
-              fill: #f6a932;
+            .hipopla {
+              font-size: 50px;
+              letter-spacing: .08em;
+            }
+
+            .resto {
+              font-size: 24px;
             }
           </style>
         </defs>
 
         <g>
-          <text class="hipopla" x="5" y="45">HIP</text>
-          <text class="hipopla" x="90" y="45">PLA</text>
+          <text class="hipopla" x="5" y="45">Hip</text>
+          <text class="hipopla" x="91" y="45">pla</text>
+          <text class="resto" x="104" y="68">Resto</text>
         </g>
 
-        <g transform="translate(45 5) scale(1.05)">
-
-          <!-- <rect x="0" y="0" width="44.6" height="42.2" stroke-width="1" stroke="#000" fill="none"/> -->
-
-          <path fill="none" stroke="#f6a932" stroke-width="1.5" stroke-linecap="round"
+        <g class="huevo" transform="translate(53.5 13) scale(.85)">
+          <path fill="none" stroke-width="1.5" stroke-linecap="round"
             d="M 22.5 5
             q -15 -4.5 -14.5 6
             q 0 3 -2 6
@@ -1381,33 +1431,11 @@
             "/>
         </g>
       </svg>
-
     </div>
 
-    <div class="menu-wrapper">
-        <ul class="menu">
-          <li>NAVIGACIÓN</li>
-          <li><a href="/">Inicio</a></li>
-          <li><a onclick="smoothScroll('#nosotros-anchor')">Nosotros</a></li>
-          <li><a onclick="smoothScroll('#menu-anchor')">Menú</a></li>
-          <!-- <li><a href="/blog/">Blog</a></li>
-          <li><a href="/contacto/">Contacto</a></li> -->
-        </ul>
-    </div>
+    <p id="legal">&copy; 2017 Hipopla Resto</p>
+  </div>
 
-    <div class="form-wrapper">
-        <form action="https://getsimpleform.com/messages?form_api_token=c826bf93cc0f701979110234068b770a" method="post">
-          <input type='hidden' name='redirect_to' value='https://hipopla.com/email/gracias.html' />
-          <input type="tel" name="unsubscribe_me" value="" tabindex="-1" autocomplete="off" />
-          <input type="email" name="email" value="" placeholder="Email" aria-label="email" required /><button class="button" type="submit" name="submit-email">Subscribe to newsletter</button>
-        </form>
-    </div>
-
-    <p id="legal"><a href="/privacidad/" style="text-decoration: underline;">Privacidad</a><br><br>&copy; 2017 Hipopla Resto
-
-    <!-- <br><a href="https://github.com/alexvipond/hipopla#hipopla" target="_blank" rel="noopener"></p> -->
-
-    <!-- <img src="/images/GitHub-Mark-Light-32px.png" alt="GitHub icon" style="height: 15px; vertical-align: middle;"> View on Github</a> -->
 
     <script defer>
         let css = [
