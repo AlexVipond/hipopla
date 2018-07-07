@@ -1,21 +1,7 @@
 /* Colors and typography */
 
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Martel:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
-
-
-/* :root {
-  --theme: #9a0007;
-  --accent: #0069c0;
-  --dark: #121212;
-  --darkGray: #3C3C3C;
-  --light: #fefefe;
-  --lightGray: #C3C3C3;
-  --gray: #888;
-  --serif: "Martel";
-  --sans: "Nunito Sans";
-} */
 
 
 /* Fixed nav styles */
@@ -64,9 +50,58 @@ main .flex {
 
 /* Main styles */
 
+
+main h1,
 main h2 {
-    font-size: 1.6em;
-    margin: 1.6em 0 .4em 0;
+  font-family: 'Amatic SC', 'Catamaran', Helvetica, Arial, sans-serif;
+}
+
+main h1 {
+  font-size: 3.6em;
+  color: #62e6f3;
+  border-bottom: 2px solid #62e6f3;
+  padding-bottom: .2em;
+  margin: .8em 0 .4em 0;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 400;
+}
+
+main h2 {
+  font-size: 3.2em;
+  margin: 1.6em 0 .4em 0;
+  color: #f6a932;
+  font-weight: 400;
+}
+
+.menu-container .menu-title {
+  font-size: 3.6em;
+  color: #62e6f3;
+  border-bottom: 2px solid #62e6f3;
+  padding-bottom: .2em;
+  margin: .8em 0 .4em 0;
+  font-family: 'Amatic SC', 'Catamaran', Helvetica, Arial, sans-serif;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-container h1 {
+  font-size: 3.2em;
+  margin: 1.2em 0 .4em 0;
+  color: #f6a932;
+  border: none;
+  position: static;
+  transform: none;
+}
+
+.menu-container h2 {
+  margin: .8em 0 .8em 0;
+  font-size: 2.4em;
+  color: #62e6f3;
 }
 
 main h3 {
@@ -91,11 +126,11 @@ main p {
 }
 
 main p, main li {
-    font-family: 'Martel', Georgia, serif;
     font-weight: 300;
     letter-spacing: .008rem;
     line-height: 1.42;
-    font-size: 17px;
+    font-size: 19px;
+    color: #D2D9E0;
 }
 
 main .theme p, main .theme li, main .accent p, main .accent li {
@@ -108,26 +143,22 @@ main ul, main ol {
 }
 
 main a {
-    color: #9a0007;
+    color: #f6a932;
 }
 
 main blockquote p {
-    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
-    color: #9a0007;
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+    color: #fefefe;
     font-size: 1.2em;
     letter-spacing: 0.015rem;
     margin: 1.6em;
 }
 
-main .button {
-    border-color: #9a0007;
-}
-
 
 /* Footer */
 footer {
-    background-color: #e9e9e9;
-    color: #121212;
+    background-color: #121212;
+    color: #fefefe;
     box-sizing: border-box;
     width: 100vw;
     padding: 2.8em 10vw;

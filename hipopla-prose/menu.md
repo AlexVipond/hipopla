@@ -1,16 +1,12 @@
 # Ensaladas
 
 ## Hawaii
-Aguacate, piña, tomate, cebolla.
-
-Servida con una vinagreta de limón.
+Aguacate, piña, tomate, cebolla. Servida con una vinagreta de limón.
 
 L. 126.00
 
 ## Popla
-Pollo, tomate, pepino, cebolla.
-
-Servida con una vinagreta de cilantro.
+Pollo, tomate, pepino, cebolla. Servida con una vinagreta de cilantro.
 
 L. 138.00
 
@@ -18,24 +14,14 @@ L. 138.00
 # Fingers & Wings
 
 ## Alitas
-Servidas con:
-
-Aderezo blue cheese y papas fritas,
-
-Bañadas en la salsa de tu preferencia:
-
-Honey Mustard, Buffalo, Barbacoa.
+Servidas con aderezo blue cheese y papas fritas. Bañadas en la salsa de tu preferencia: Honey Mustard, Buffalo, Barbacoa.
 
 6 pzs: L. 120.00
 
 8 pzs: L. 135.00
 
 ## Chicken Fingers
-Servidos con:
-
-Papas fritas y salsa de tu preferencia:
-
-Honey Mustard, Buffalo, Barbacoa.
+Servidos con papas fritas y salsa de tu preferencia: Honey Mustard, Buffalo, Barbacoa.
 
 4 pzs: L. 120.00
 
@@ -45,27 +31,17 @@ Honey Mustard, Buffalo, Barbacoa.
 # Sandwiches
 
 ## Madame Popla
-Jamon ahumado, huevo estrellado,
-
-queso provolone y queso mozarella.
+Jamon ahumado, huevo estrellado, queso provolone y queso mozarella.
 
 L 75.00
 
 ## Monsieur Popla
-Jugosas tiras de pollo a la plancha, aguacate,
-
-queso cheddar, jalapeños.
-
-Bañado con mayo dressing de la casa.
-
-Acompañado con papas fritas.
+Jugosas tiras de pollo a la plancha, aguacate, queso cheddar, jalapeños. Bañado con mayo dressing de la casa. Acompañado con papas fritas.
 
 L. 139.00
 
 # Shawarma
-En pan pita, deliciosas tiras de pollo, lechuga, tomate, y cebolla.
-
-Bañado con salsa tzatziki.
+En pan pita, deliciosas tiras de pollo, lechuga, tomate, y cebolla. Bañado con salsa tzatziki.
 
 L. 85.00
 
@@ -73,11 +49,7 @@ L. 85.00
 # Panini
 
 ## Panino Azul
-Sauté de champiñones con cebolla,
-
-queso blue cheese y tocino,
-
-Acompañado con papas fritas.
+Sauté de champiñones con cebolla, queso blue cheese y tocino. Acompañado con papas fritas.
 
 L. 143.00
 
@@ -92,11 +64,7 @@ Con huevo estrellado: L. 50.00
 # Papas
 
 ## Popla
-Deliciosas papas fritas sazonadas,
-
-cubiertas con una cremosa salsa de queso cheddar,
-
-jalapeño, bacon bites, y chimichurri.
+Deliciosas papas fritas sazonadas, cubiertas con una cremosa salsa de queso cheddar, jalapeño, bacon bites, y chimichurri.
 
 L. 115.00
 

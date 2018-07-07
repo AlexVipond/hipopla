@@ -1,4 +1,6 @@
-# Preparando los platillos más deliciosos!
+# Nosotros
+
+Preparamos los platillos más deliciosos!
 
 Tenemos el espacio para aquellas mentes creativas, ideas vivas y también las buenas vibras. Ofrecemos:
 
@@ -8,12 +10,12 @@ Tenemos el espacio para aquellas mentes creativas, ideas vivas y también las bu
 - Comida para llevar
 - Servicio de mesero
 
-Para llevar, puedes realizar tus órdenes al +504 2515-1466.
+Para llevar, puedes realizar tus órdenes al [+504 2515-1466](tel:504-2525-1466).
 
 En la Col. Los Alamos, segunda etapa, frente a bulevar bio-saludable, ¡TE ESPERAMOS!
 
 
-## Horas:
+## Horas
 
 - Lunes CERRADO
 - Martes 4:00pm - 10:00pm
