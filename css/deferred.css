@@ -32,24 +32,9 @@ main {
   background-image: linear-gradient(#121212 0px, rgba(18, 18, 18, 0) 60px);
 }
 
-main section, main .flex {
+main section {
     padding: 29px 5vw;
 }
-
-main .flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-    main .flex .gist, main .flex .paragraphs {
-        text-align: center;
-    }
-
-    main .theme p, main .theme li, main .accent p, main .accent li {
-        letter-spacing: .02rem;
-        font-size: 18px;
-    }
 
 
 /* Main styles */
@@ -146,6 +131,10 @@ main h2 {
   margin: .8em 0 .8em 0;
   font-size: 2.4em;
   color: #62e6f3;
+}
+
+.menu-items-container p {
+  width: 100%;
 }
 
 main h3 {

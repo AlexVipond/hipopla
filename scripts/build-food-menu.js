@@ -60,8 +60,21 @@ function buildFoodMenu() {
 
   let menuSectionContainers = document.querySelectorAll('.menu-section');
   menuSectionContainers.forEach(function(section) {
-    let menuSectionName = section.querySelector('h1').textContent;
-    let menuItemNames = section.querySelectorAll('h2');
+    let menuSectionTitle = section.querySelector('h1'),
+        menuItemNames = section.querySelectorAll('h2');
+
+    let menuSectionName = menuSectionTitle.textContent,
+        menuOrphans = nextUntil(menuSectionTitle, 'h2');
+
+    let menuItemsContainer = document.createElement('div');
+    menuItemsContainer.classList.add('menu-items-container');
+    menuItemsContainer.setAttribute('id', slugify(menuSectionName) + '-items');
+
+    if(menuOrphans.length > 0) {
+      menuOrphans.forEach(function(orphan) {
+        menuItemsContainer.appendChild(orphan);
+      });
+    }
 
     let menuItemGroups = [];
     menuItemNames.forEach(function(name) {
@@ -69,10 +82,6 @@ function buildFoodMenu() {
       theseItems = [name].concat(theseItems);
       menuItemGroups.push(theseItems);
     });
-
-    let menuItemsContainer = document.createElement('div');
-    menuItemsContainer.classList.add('menu-items-container');
-    menuItemsContainer.setAttribute('id', slugify(menuSectionName) + '-items');
 
     menuItemGroups.forEach(function(group) {
       let container = document.createElement('div');
