@@ -28,6 +28,10 @@
 
 /* Main positions */
 
+main {
+  background-image: linear-gradient(#121212 0px, rgba(18, 18, 18, 0) 60px);
+}
+
 main section, main .flex {
     padding: 29px 5vw;
 }
@@ -91,7 +95,7 @@ main h2 {
 
 .menu-container h1 {
   font-size: 3.2em;
-  margin: 1.2em 0 .4em 0;
+  margin: 1.2em 0 0em 0;
   color: #f6a932;
   border: none;
   position: static;
@@ -125,12 +129,13 @@ main p {
     margin: 1.2em 0;
 }
 
+/* TODO: li icons */
 main p, main li {
     font-weight: 300;
-    letter-spacing: .008rem;
+    letter-spacing: .079rem;
     line-height: 1.42;
-    font-size: 19px;
-    color: #D2D9E0;
+    font-size: 18px;
+    color: #E8FBFD;
 }
 
 main .theme p, main .theme li, main .accent p, main .accent li {
@@ -143,7 +148,7 @@ main ul, main ol {
 }
 
 main a {
-    color: #f6a932;
+    color: #62e6f3;
 }
 
 main blockquote p {
@@ -157,12 +162,16 @@ main blockquote p {
 
 /* Footer */
 footer {
-    background-color: #121212;
-    color: #fefefe;
+    background-color: #161C1D;
+    color: #D2D9E0;
     box-sizing: border-box;
     width: 100vw;
     padding: 2.8em 10vw;
 }
+
+  footer a:visited {
+    color: #D2D9E0;
+  }
 
   footer .half {
     display: inline-block;
@@ -172,6 +181,8 @@ footer {
 
     footer .logo-wrapper {
         text-align: right;
+        position: relative;
+        z-index: 0;
     }
 
         footer .logo {
@@ -186,11 +197,11 @@ footer {
 
         footer .logo .yolk,
         footer .logo text {
-          fill: #121212;
+          fill: #D2D9E0;
         }
 
         footer .logo path {
-            stroke: #121212;
+            stroke: #D2D9E0;
         }
 
         footer .logo:hover {

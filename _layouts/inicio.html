@@ -46,11 +46,11 @@
 
     <header class="landing-page">
       <style>
-        /* body {
+        #bg-img {
           background-image: url(/media/i-like-food.svg);
            background-color: #121212;
            background-repeat: repeat;
-        } */
+        }
       </style>
       <div id="bg-img" class="bg-img"></div>
 
@@ -193,7 +193,7 @@
             {% capture nosotros %}{% include_relative hipopla-prose/nosotros.md %}{% endcapture %}
             {{ nosotros | markdownify }}
           </section>
-          <script src="/scripts/build-nosotros.js"></script>
+          <!-- <script src="/scripts/build-nosotros.js"></script> -->
 
           <section id="menu-anchor" class="blog-post menu-container">
             <span class="menu-title">Menú</span>
