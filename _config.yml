@@ -12,6 +12,7 @@ prose:
     - _config.yml
     - /_layouts
     - /_includes
+    - /_site
     - /css
     - /scripts
     - .gitignore
