@@ -28,9 +28,15 @@ function buildFoodMenu() {
 
   let menuContainer = document.querySelector('section.menu-container');
 
+  let cheveronBeforeClass = '<svg class="',
+      cheveronAfterClass = '" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/></svg>';
+
   let menuHeaders = menuContainer.querySelectorAll('h1');
   menuHeaders.forEach(function(header) {
     header.classList.add('menu-section-header');
+    let text = header.textContent;
+    header.innerHTML = cheveronBeforeClass  + slugify(text) + '-cheveron' + cheveronAfterClass + text;
+    header.setAttribute('onclick', "openCloseDrawer('div#" + slugify(text) + "-items', 'open-drawer'); rotateItem('svg." + slugify(text) + "-cheveron', 'rotate-item');");
   });
 
   let menuSections = [];
@@ -54,6 +60,7 @@ function buildFoodMenu() {
 
   let menuSectionContainers = document.querySelectorAll('.menu-section');
   menuSectionContainers.forEach(function(section) {
+    let menuSectionName = section.querySelector('h1').textContent;
     let menuItemNames = section.querySelectorAll('h2');
 
     let menuItemGroups = [];
@@ -63,19 +70,23 @@ function buildFoodMenu() {
       menuItemGroups.push(theseItems);
     });
 
+    let menuItemsContainer = document.createElement('div');
+    menuItemsContainer.classList.add('menu-items-container');
+    menuItemsContainer.setAttribute('id', slugify(menuSectionName) + '-items');
+
     menuItemGroups.forEach(function(group) {
       let container = document.createElement('div');
 
       container.setAttribute('id', slugify(group[0].textContent));
       container.classList.add('menu-item');
-      section.appendChild(container);
+      menuItemsContainer.appendChild(container);
 
       group.forEach(function(node) {
         container.appendChild(node);
       });
-
-      section.appendChild(container);
     });
+
+    section.appendChild(menuItemsContainer);
   });
 }
 

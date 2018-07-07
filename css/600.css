@@ -11,6 +11,27 @@ main .flex {
     padding: 1.6em 10vw;
 }
 
+.menu-items-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu-container .menu-item {
+  display: inline-block;
+  width: 49.5%;
+  box-sizing: border-box;
+}
+
+.menu-container .menu-item:nth-child(odd) {
+  padding-right: 30px;
+}
+
+.menu-container .menu-item:nth-child(even) {
+  padding-left: 30px;
+}
+
+
 
 /* Main styles */
 
@@ -18,12 +39,9 @@ main .flex {
 main p, main li {
     font-size: 19px;
     line-height: 1.58;
-    letter-spacing: .014rem;
 }
 
 main .theme p, main .theme li, main .accent p, main .accent li {
-    letter-spacing: .017rem;
-    font-size: 17.85px;
 }
 
 main h2 {

@@ -687,6 +687,11 @@
       position: absolute;
       bottom: 5px;
       left: 0;
+      -webkit-user-select: none;
+      -moz-user-select: -moz-none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
       header .scroll-down-wrapper .scroll-down {
@@ -1310,6 +1315,8 @@
 
           </section>
           <script src="/scripts/build-food-menu.js"></script>
+          <script src="/scripts/open-close-drawer.js" defer></script>
+          <script src="/scripts/rotate-item.js" defer></script>
 
         </article>
     </main>
