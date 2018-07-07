@@ -31,6 +31,10 @@ main .flex {
   padding-left: 30px;
 }
 
+.menu-container h1 {
+  cursor: pointer;
+}
+
 
 
 /* Main styles */
@@ -39,9 +43,6 @@ main .flex {
 main p, main li {
     font-size: 19px;
     line-height: 1.58;
-}
-
-main .theme p, main .theme li, main .accent p, main .accent li {
 }
 
 main h2 {

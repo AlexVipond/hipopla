@@ -101,6 +101,11 @@ main h2 {
   position: static;
   transform: none;
   display: block;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .menu-container h1 svg {
@@ -198,14 +203,14 @@ main blockquote p {
 /* Footer */
 footer {
     background-color: #161C1D;
-    color: #D2D9E0;
+    color: #A8B5B7;
     box-sizing: border-box;
     width: 100vw;
     padding: 2.8em 10vw;
 }
 
   footer a:visited {
-    color: #D2D9E0;
+    color: #A8B5B7;
   }
 
   footer .half {
@@ -232,11 +237,11 @@ footer {
 
         footer .logo .yolk,
         footer .logo text {
-          fill: #D2D9E0;
+          fill: #A8B5B7;
         }
 
         footer .logo path {
-            stroke: #D2D9E0;
+            stroke: #A8B5B7;
         }
 
         footer .logo:hover {
@@ -256,6 +261,7 @@ footer {
             footer .menu li {
                 display: block;
                 margin: .8em 0;
+                cursor: pointer;
             }
 
             footer .menu li:first-child {
