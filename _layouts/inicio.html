@@ -157,11 +157,14 @@
                   "/>
               </g>
             </svg>
+            <div class="calls-to-action">
+              <span class="button button-secondary" href="#menu-anchor" onclick="smoothScroll('#menu-anchor')">Ver menú</span>
+              <a class="button button-primary" href="tel:504-2525-1466">Llamar y ordenar</a>
+            </div>
           </div>
 
-
           <div class="scroll-down-wrapper">
-            <a onclick="scrollPastLandingPage()"><svg class="scroll-down"
+            <!-- <a onclick="scrollPastLandingPage()"><svg class="scroll-down"
               baseProfile="tiny"
               viewBox="0 0 24 24"
               preserveAspectRatio="xMinYMin meet">
@@ -173,14 +176,14 @@
                 m0-2
                 a8 8 0 1 0 0-16 8 8 0 0 0 0 16z
                 "/>
-            </svg></a>
+            </svg></a> -->
           </div>
         </div>
       </div>
 
     </header>
 
-    <script src="/scripts/scroll-past-landing-page.js"></script>
+    <!-- <script src="/scripts/scroll-past-landing-page.js"></script> -->
 
     <div class="pseudo-landing-page"></div>
 
@@ -189,12 +192,6 @@
 
     <main>
         <article>
-          <section id="nosotros-anchor" class="blog-post nosotros-container">
-            {% capture nosotros %}{% include_relative hipopla-prose/nosotros.md %}{% endcapture %}
-            {{ nosotros | markdownify }}
-          </section>
-          <!-- <script src="/scripts/build-nosotros.js"></script> -->
-
           <section id="menu-anchor" class="blog-post menu-container">
             <span class="menu-title">Menú</span>
             {% capture menu %}{% include_relative hipopla-prose/menu.md %}{% endcapture %}
@@ -204,6 +201,11 @@
           <script src="/scripts/open-close-drawer.js" defer></script>
           <script src="/scripts/rotate-item.js" defer></script>
 
+          <section id="nosotros-anchor" class="blog-post nosotros-container">
+            {% capture nosotros %}{% include_relative hipopla-prose/nosotros.md %}{% endcapture %}
+            {{ nosotros | markdownify }}
+          </section>
+          <!-- <script src="/scripts/build-nosotros.js"></script> -->
         </article>
     </main>
 
