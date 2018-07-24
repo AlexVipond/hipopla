@@ -3,18 +3,8 @@
 callback([
 
   {
-    "text": "Home",
+    "text": "Inicio",
     "href": "/"
-  } ,
-
-  {
-    "text": "About",
-    "href": "/about/"
-  } ,
-
-  {
-    "text": "Privacy & Security",
-    "href": "/privacy/"
   }
 
 ])
