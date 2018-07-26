@@ -10,7 +10,7 @@ Tenemos el espacio para aquellas mentes creativas, ideas vivas y también las bu
 - Comida para llevar
 - Servicio de mesero
 
-Para llevar, puedes realizar tus órdenes al [+504 2515-1466](tel:504-2515-1466).
+Para llevar, puedes realizar tus órdenes al [2515-1466](tel:2515-1466).
 
 En la Col. Los Alamos, segunda etapa, frente a bulevar bio-saludable, ¡TE ESPERAMOS!
 
