@@ -16,9 +16,9 @@ L. 138.00
 ## Alitas
 Servidas con aderezo blue cheese y papas fritas. Bañadas en la salsa de tu preferencia: Honey Mustard, Buffalo, Barbacoa.
 
-6 pzs: L. 120.00
+6 pzs: L. 135.00
 
-8 pzs: L. 135.00
+8 pzs: L. 150.00
 
 ## Chicken Fingers
 Servidos con papas fritas y salsa de tu preferencia: Honey Mustard, Buffalo, Barbacoa.
